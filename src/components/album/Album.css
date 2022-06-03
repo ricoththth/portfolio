@@ -1,0 +1,41 @@
+.tittle-pj{
+    color: var(--green-color);
+    font-size: 24px;
+    text-align: center;
+    font-family:"PorterFT";
+    font-weight: bold;
+    padding: 2rem 0rem 3rem;
+}
+.images-album {
+display: flex;
+justify-content: center;
+}
+.works-images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+.item-album{
+    padding-bottom: 3rem;
+}
+.item-ar{
+    width: 28%;
+    padding-bottom: 2rem;
+}
+.item-ar:hover {
+    transform: perspective(3000px) rotateY(-10deg)}
+.subtittle-pj{
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        font-family:"PorterFT";
+        font-weight: lighter;
+        padding: 0rem 0rem 3rem;
+    }
+    .item-album:hover{
+        filter: blur();
+    }
+/*@media screen and (min-width: 1400px) {
+    width: ;
+    }*/

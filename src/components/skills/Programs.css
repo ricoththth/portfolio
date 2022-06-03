@@ -1,0 +1,76 @@
+.skills{
+    text-align: center;
+}
+.tittle{
+    color: var(--green-color);
+    font-size: 24px;
+    text-align: center;
+    font-family:"PorterFT";
+    font-weight: bold;
+    padding: 2rem 0rem 3rem;
+}
+.designer{
+    display: flex;
+    justify-content: center;
+}
+.sub-tittle{
+    color: white;
+    font-family:"PorterFT";
+    font-weight: lighter;
+    padding: 0rem 0rem 2rem;
+}
+.figma{
+    width: 25px;
+    padding-bottom: 2rem;
+}
+.item-skills{
+    width: 50px;
+    padding: 0%;
+    padding-left: 3%;
+    padding-bottom: 2rem;
+}
+.images{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.html-skills{
+    width: 56px;
+    padding-bottom: 2rem;
+}
+.text-leng{
+    color: white;
+    font-family:"PorterFT";
+    font-weight: lighter;
+    font-size: 16px;
+}
+.langua{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tittle-two{
+    color: var(--green-color);
+    font-size: 24px;
+    text-align: center;
+    font-family:"PorterFT";
+    font-weight: bold;
+    padding: 1rem 0rem 1rem;
+}
+.spark {
+    width: 36px;
+    padding: 0%;
+    padding-left: 3%;
+    padding-bottom: 2rem;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

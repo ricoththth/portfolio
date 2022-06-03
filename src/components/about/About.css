@@ -1,0 +1,44 @@
+h3 {
+    color: var(--green-color);
+    font-size: 24px;
+    text-align: center;
+    font-family:"PorterFT";
+    font-weight: bold;
+}
+p {
+    color: rgba(255, 255, 255, 0.801);
+    padding: 0rem 10rem 2rem ;
+    font-size: 20px;
+    font-family:"PorterFT";
+    font-weight: lighter;
+    text-align: center;
+}
+.extras {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+.spiderman-quote {
+    color: #96FC00;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 0rem 18rem 2rem;
+}
+@media screen and (max-width: 768px){
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+        padding: 0rem 4rem 2rem ;
+    }
+    .image-me{
+        width: 30%;
+    }
+    .spiderman-quote{
+    font-size: 8px;
+    text-align: center;
+    margin: 0rem 2rem 2rem;
+    }
+}

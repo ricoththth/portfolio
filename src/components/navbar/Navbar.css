@@ -1,0 +1,84 @@
+nav{
+    padding: 3% 8% 1% 8%;
+    border-top: 1px solid var(--green-color);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.navbar-name{
+    width: 30%;    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-tittle {
+    font-family: "PorterFT";
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+.item-nav{
+    font-family: "PorterFT";
+    font-weight: normal;
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+.item-nav:hover{
+    color: var(--green-color);
+}
+.navbar-sections{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+li {list-style: none;}
+.nav-toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.2rem;
+    background: var(--gray-color);
+}
+.nav-toggler{
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .nav-toggler{
+        display: block;
+    }
+    .navbar-sections{
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50%;
+        height: 30vh;
+        background-color: #101010;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .item-nav{
+        font-size: 12px;
+    }
+    .navbar-tittle{
+        font-size: 8px;
+    }
+}
+
+.nav__active {
+    transform: translateX(0%);
+  }
+
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+  }

@@ -1,0 +1,15 @@
+.footer-img {
+    background-color: #1C1B1B;
+    display: flex;
+    justify-content: space-evenly;
+}
+.image-footer{
+    width: 28px;
+    padding: 1%;
+}
+@media screen and (max-width: 768px){
+    .image-footer{
+        width: 18px;
+        padding: 2%;
+    }
+}
