@@ -1,13 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
-import imgAbout  from '../../imports/Desktop4/df70452dbca136a2b61c68a126938f310aafc7bd.png';
-import imgAbout2 from '../../imports/Desktop4/b846cac68644cc134ff6df02c312aa0f977535c7.png';
-import imgP1 from '../../imports/Desktop3/48f0e4f9ea8f9d18488373f4f94e4a0f738cfe94.png';
-import imgP2 from '../../imports/Desktop3/d6b83829ec4f021a428062642136e2d51c682ab2.png';
-import imgP4 from '../../imports/Desktop3/de1915ac263bb0d641e7b17b76609c8d0c6836c8.png';
-import imgP5 from '../../imports/Desktop3/70c0b3d97ab60923b919b1ee9b1c90b3b09b45be.png';
-import imgSelf from '../../imports/image-7.png';
+import { ABOUT_DECK } from '../data/images';
 
 const deckRots = [9, -6, 14, -11, 4, -16, 7];
 
@@ -75,15 +69,7 @@ const skills = ['Figma', 'Adobe CC', 'Premiere Pro', 'After Effects', 'Claude / 
 export function About() {
   const { t } = useLanguage();
 
-  const deckImages = [
-    { img: imgSelf,   caption: t('cap1') },
-    { img: imgAbout,  caption: t('cap2') },
-    { img: imgP5,     caption: t('cap3') },
-    { img: imgP2,     caption: t('cap4') },
-    { img: imgP4,     caption: t('cap5') },
-    { img: imgP1,     caption: t('cap6') },
-    { img: imgAbout2, caption: t('cap7') },
-  ];
+  const deckImages = ABOUT_DECK.map(({ img, captionKey }) => ({ img, caption: t(captionKey) }));
 
   return (
     <div className="min-h-screen bg-white">

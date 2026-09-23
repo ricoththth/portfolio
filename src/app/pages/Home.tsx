@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import { motion } from 'motion/react';
 import { useRef, useState, useCallback } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import imgProfile from '../../imports/Desktop1/409cbe047aa72758d77c7abb09796a7ec4faf03f.png';
+import { HOME_IMAGES } from '../data/images';
 
 const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%&*';
 
@@ -106,7 +106,7 @@ export function Home() {
           <motion.div className="flex items-start justify-center lg:justify-start" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}>
             <div className="w-[220px] group">
               <div className="overflow-hidden">
-                <img src={imgProfile} alt="Lizeth Rico" className="w-full h-auto transition-transform duration-700 group-hover:scale-105 group-hover:grayscale" loading="eager" decoding="async" />
+                <img src={HOME_IMAGES.perfil} alt="Lizeth Rico" className="w-full h-auto transition-transform duration-700 group-hover:scale-105 group-hover:grayscale" loading="eager" decoding="async" />
               </div>
               <p className="font-['Space_Mono'] text-[9px] text-gray-400 mt-2 tracking-wider uppercase">
                 {t('profileCaption')}
