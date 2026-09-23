@@ -19,6 +19,12 @@ export interface ProjectData {
    *  for dense screenshots/infographics that shouldn't get cropped.
    *  Defaults to [0] (just the first slot) when not set. */
   wideSlots?: number[];
+  /** Optional: two gallery slots (indices within gallery.slice(1)) that
+   *  render side by side at their natural height instead of in the
+   *  normal grid — for two tall screenshots of different lengths. A
+   *  text panel goes under whichever one is shorter, to balance the
+   *  pair visually. */
+  sideBySide?: { indices: [number, number]; shortIndex: 0 | 1; textKey: string };
   /** Optional: shows a "want to read more / try it?" prompt + round
    *  button below the gallery, linking out (e.g. to a Behance case
    *  study). All three must be set together. */
@@ -72,14 +78,15 @@ export const projects: ProjectData[] = [
   },
   {
     id: 4,
-    slug: 'community-event',
+    slug: 'forja',
     cover: WORK_IMAGES.proj4.cover,
     gallery: WORK_IMAGES.proj4.gallery,
-    year: '2022',
+    year: '2023',
     titleKey: 'proj4Title',
     catKey: 'proj4Cat',
     descKey: 'proj4Desc',
-    tagKeys: ['proj4Tag1', 'proj4Tag2'],
+    tagKeys: ['proj4Tag1', 'proj4Tag2', 'proj4Tag3'],
+    sideBySide: { indices: [1, 2], shortIndex: 0, textKey: 'proj4SideText' },
   },
   {
     id: 5,

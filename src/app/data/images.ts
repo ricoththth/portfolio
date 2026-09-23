@@ -61,6 +61,10 @@ import imgMoodyLogo from '../../assets/uploads/moody-logo.png'; // logo/mascota 
 import imgMoodyResearch from '../../assets/uploads/moody-research-entrevistas.png'; // hallazgos de entrevistas/investigación de Moody
 import imgMoodyUsuarios from '../../assets/uploads/moody-research-usuarios.png'; // mapa de empatía / usuarios de Moody
 import imgMoodyStorytelling from '../../assets/uploads/moody-storytelling.png'; // storytelling / user journey de Moody
+import imgForjaHero from '../../assets/uploads/forja-hero-covid.png'; // hero de la sección Covid-19 rediseñada
+import imgForjaServicioCliente from '../../assets/uploads/forja-servicio-cliente.png'; // página "Servicio al cliente" (captura larga)
+import imgForjaHomepage from '../../assets/uploads/forja-homepage.webp'; // homepage completa rediseñada (captura muy larga)
+import imgForjaAntes from '../../assets/uploads/forja-antes.png'; // cómo se veía el sitio ANTES del rediseño
 
 // ───────────────────────────────────────────────────────────────────
 // HOME — página de inicio
@@ -100,7 +104,7 @@ export const WORK_IMAGES = {
   proj1: { cover: fotoTallerAbrazo,      gallery: [fotoTallerAbrazo,      fotoPosterTaller,      fotoPendiente,        fotoCollageMoodboard] },
   proj2: { cover: fotoRetratoAbrazo,     gallery: [fotoRetratoAbrazo,     fotoPendiente,          fotoPendiente,        fotoTallerAbrazo] },
   proj3: { cover: imgMoodyLogo,          gallery: [imgMoodyLogo,          imgMoodyResearch,      imgMoodyUsuarios,     imgMoodyStorytelling] }, // MOODY — completo, las 3 salen anchas (ver wideSlots en projects.ts)
-  proj4: { cover: fotoDesfileTrio,       gallery: [fotoDesfileTrio,       fotoPendiente,          fotoCollageMoodboard,fotoPendiente] },
+  proj4: { cover: imgForjaHero,          gallery: [imgForjaHero,          imgForjaAntes,          imgForjaServicioCliente, imgForjaHomepage] }, // FORJA — ver sideBySide en projects.ts
   proj5: { cover: fotoDesfilePasarela,   gallery: [fotoDesfilePasarela,   fotoCollageMoodboard,  fotoPendiente,        fotoPendiente] },
   proj6: { cover: fotoCollageHalloween,  gallery: [fotoCollageHalloween,  fotoPendiente,          fotoPendiente,        fotoPendiente] },
   proj7: { cover: fotoTexturaRosa,       gallery: [fotoTexturaRosa,       fotoPendiente,          fotoCollageMoodboard,fotoPendiente] },
