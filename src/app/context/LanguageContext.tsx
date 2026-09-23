@@ -97,7 +97,7 @@ const translations = {
     proj3ExternalPrompt: 'Want to read more and try it?',
     proj3ExternalButton: 'Click here',
     proj4Desc: 'Forja was another diploma project — a full redesign that started with a heuristic evaluation of the existing site and carried through to a high-fidelity prototype.',
-    proj4SideText: "The heuristic evaluation surfaced several visual and navigation inconsistencies — each page felt like it belonged to a different site. On the Customer Service page, I unified the visual hierarchy, simplified the FAQ accordion, and aligned the color palette with the rest of the site so the experience reads as one coherent brand from start to finish.",
+    proj4SideText: "The heuristic evaluation surfaced several visual and navigation inconsistencies between sections; each page felt like it belonged to a different site.",
     proj5Desc: "Better Campus was a heuristic analysis I did as part of a research group (Semillero) at Universidad Nacional (DIN'T). It's a student-to-student platform that helps you build your class schedule and connects with UNAL's academic system (SIA).\n\nMy role was the heuristic evaluation, reviewing the navigation flows, and testing the features. That work went to the BetterCampus team as feedback, and they implemented it. Afterwards, on the UI side, we worked as a team and used atomic design to implement a more comfortable style for the user.",
     proj5ExternalPrompt: 'Want to read more and try it?',
     proj5ExternalButton: 'Click here',
