@@ -84,7 +84,7 @@ export function ProjectDetail() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16">
           {project.gallery.slice(1).map((img, i, arr) => {
             const isTextSlot = !!project.extraTextKey && i === arr.length - 1;
-            const isWide = i === 0;
+            const isWide = (project.wideSlots ?? [0]).includes(i);
             return (
               <motion.div
                 key={i}

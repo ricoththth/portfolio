@@ -14,6 +14,11 @@ export interface ProjectData {
    *  panel showing this copy instead — for projects that need more
    *  room to explain than a caption allows. */
   extraTextKey?: string;
+  /** Optional: indices (within gallery.slice(1)) that render full-width
+   *  with object-contain instead of the small 4:3 object-cover grid —
+   *  for dense screenshots/infographics that shouldn't get cropped.
+   *  Defaults to [0] (just the first slot) when not set. */
+  wideSlots?: number[];
   /** Optional: shows a "want to read more / try it?" prompt + round
    *  button below the gallery, linking out (e.g. to a Behance case
    *  study). All three must be set together. */
@@ -37,6 +42,7 @@ export const projects: ProjectData[] = [
     catKey: 'proj3Cat',
     descKey: 'proj3Desc',
     tagKeys: ['proj3Tag1', 'proj3Tag2', 'proj3Tag3'],
+    wideSlots: [0, 1, 2],
     externalUrl: 'https://www.behance.net/gallery/175823079/Moody-Ux-Research?tracking_source=search_projects|ricoththth&l=1',
     externalPromptKey: 'proj3ExternalPrompt',
     externalButtonKey: 'proj3ExternalButton',
