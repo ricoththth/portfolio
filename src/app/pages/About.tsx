@@ -124,8 +124,7 @@ export function About() {
             {[
               { label: t('contactEmail'),    href: 'mailto:hello@lizethrico.com' },
               { label: t('contactResume'),   href: '#resume' },
-              { label: t('contactLinkedin'), href: 'https://linkedin.com' },
-              { label: t('contactTwitter'),  href: 'https://twitter.com' },
+              { label: t('contactLinkedin'), href: 'https://www.linkedin.com/in/lizeth-rico/' },
             ].map(({ label, href }) => (
               <motion.a key={label} href={href} target={href.startsWith('http') ? '_blank' : undefined} rel={href.startsWith('http') ? 'noopener noreferrer' : undefined} className="relative group" whileHover={{ x: 2 }} transition={{ duration: 0.2 }}>
                 <span className="relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-black group-hover:after:h-0 after:transition-all after:duration-200">{label}</span>

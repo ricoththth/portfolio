@@ -52,13 +52,12 @@ export function Work() {
                   src={WORK_IMAGES.hoverIcon}
                   alt=""
                   aria-hidden="true"
-                  className="absolute inset-0 m-auto w-2/5 h-2/5 object-contain opacity-0 scale-75 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:scale-100 pointer-events-none"
+                  className="absolute inset-0 m-auto w-3/5 h-3/5 object-contain opacity-0 scale-75 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:scale-100 pointer-events-none"
                 />
               </div>
               <div className="font-['Space_Mono'] text-[10px] uppercase tracking-wider">
-                <div className="flex items-baseline justify-between mb-1">
+                <div className="mb-1">
                   <span className="font-bold transition-all duration-200 group-hover:tracking-widest">{t(project.titleKey)}</span>
-                  <span className="text-gray-400">{project.year}</span>
                 </div>
                 <div className="text-gray-500">{t(project.catKey)}</div>
                 <div className="flex gap-2 mt-1.5 flex-wrap">

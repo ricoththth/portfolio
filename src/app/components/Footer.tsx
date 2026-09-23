@@ -10,8 +10,7 @@ export function Footer() {
           <div>{t('footerCopy')}</div>
           <div className="flex gap-6">
             <a href="mailto:hello@lizethrico.com" className="hover:underline">{t('email')}</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:underline">{t('twitter')}</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:underline">{t('linkedin')}</a>
+            <a href="https://www.linkedin.com/in/lizeth-rico/" target="_blank" rel="noopener noreferrer" className="hover:underline">{t('linkedin')}</a>
           </div>
         </div>
       </div>

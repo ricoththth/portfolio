@@ -18,7 +18,6 @@ const translations = {
     // ── FOOTER ───────────────────────────────────────────────────
     footerCopy: '© 2026 LIZETH RICO',
     email: 'Email',
-    twitter: 'Twitter',
     linkedin: 'LinkedIn',
 
     // ── HOME ─────────────────────────────────────────────────────
@@ -96,7 +95,6 @@ const translations = {
     contactEmail: 'EMAIL',
     contactResume: 'RESUME',
     contactLinkedin: 'LINKEDIN',
-    contactTwitter: 'TWITTER',
 
     // ── WORK ─────────────────────────────────────────────────────
     workTitle: 'Work',
@@ -148,7 +146,6 @@ const translations = {
     // ── FOOTER ───────────────────────────────────────────────────
     footerCopy: '© 2026 LIZETH RICO',
     email: 'Correo',
-    twitter: 'Twitter',
     linkedin: 'LinkedIn',
 
     // ── HOME ─────────────────────────────────────────────────────
@@ -226,7 +223,6 @@ const translations = {
     contactEmail: 'EMAIL',
     contactResume: 'CV',
     contactLinkedin: 'LINKEDIN',
-    contactTwitter: 'TWITTER',
 
     // ── WORK ─────────────────────────────────────────────────────
     workTitle: 'Trabajo',

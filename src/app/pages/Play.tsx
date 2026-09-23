@@ -64,8 +64,8 @@ export function Play() {
           {t('playInstruction')}
         </div>
 
-        <div className="mt-10 flex justify-center">
-          <img src={PLAY_IMAGES.banner} alt="Coming up: photobooth" className="w-full max-w-[560px] h-auto" />
+        <div className="mt-10">
+          <img src={PLAY_IMAGES.banner} alt="Coming up: photobooth" className="w-full h-auto" />
         </div>
       </div>
 

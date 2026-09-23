@@ -53,7 +53,7 @@ export function ProjectDetail() {
           <div>
             <div className="flex items-center gap-2 mb-3 text-gray-400">
               <Star size={12} fill="currentColor" strokeWidth={0} />
-              <span className="font-['Space_Mono'] text-[10px] uppercase tracking-widest">{t(project.catKey)} · {project.year}</span>
+              <span className="font-['Space_Mono'] text-[10px] uppercase tracking-widest">{t(project.catKey)}</span>
             </div>
             <h1 className="font-['Space_Mono'] uppercase tracking-tight text-3xl md:text-4xl">{t(project.titleKey)}</h1>
           </div>
