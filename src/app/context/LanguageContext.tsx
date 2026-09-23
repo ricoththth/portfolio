@@ -76,20 +76,33 @@ const translations = {
     cap7: 'building in public',
     clickToShuffle: 'click to shuffle',
 
-    experienceLabel: '[ experience ]',
+    experienceLabel: '[ studies ]',
     year2025: '2025',
+    title2025: 'UNIVERSITY / PROGRAM NAME', // ⬅️ fill in with your real school/program
     exp2025_1: 'interning @ seek by sara blakely ventures (finance, operations, marketing)',
     exp2025_2: 'studying UX/design — switched mains',
     exp2025_3: 'product design @ polymarket (internal marketing tool contract)',
     exp2025_4: 'started building an app for creators: Kairo',
     year2324: '2023–24',
+    title2324: 'UNIVERSITY / PROGRAM NAME', // ⬅️ fill in with your real school/program
     exp2324_1: 'built one-woman content studio — $250k in campaigns',
     exp2324_2: 'ui/ux for web3 products & platforms',
     exp2324_3: 'building in public w/ figma make',
     year2122: '2021–22',
+    title2122: 'UNIVERSITY / PROGRAM NAME', // ⬅️ fill in with your real school/program
     exp2122_1: 'led brand strategy for web3 platform (200k users)',
     exp2122_2: 'designed campaigns w/ 3M+ impressions',
     exp2122_3: 'co-led community & events production',
+
+    // Two new entries — replace the placeholder text below with real ones
+    yearNew1: 'YEAR',
+    titleNew1: 'UNIVERSITY / PROGRAM NAME',
+    expNew1_1: 'detail one',
+    expNew1_2: 'detail two',
+    yearNew2: 'YEAR',
+    titleNew2: 'UNIVERSITY / PROGRAM NAME',
+    expNew2_1: 'detail one',
+    expNew2_2: 'detail two',
 
     skillsLabel: '[ tools & skills ]',
     contactEmail: 'EMAIL',
@@ -202,22 +215,35 @@ const translations = {
     cap5: 'en set, 2023',
     cap6: 'generame idea, 2024',
     cap7: 'construyendo en público',
-    clickToShuffle: 'clic para barajar',
+    clickToShuffle: 'dale clic para chismosear',
 
-    experienceLabel: '[ experiencia ]',
+    experienceLabel: '[ estudios ]',
     year2025: '2025',
+    title2025: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA', // ⬅️ pon aquí tu colegio/universidad real
     exp2025_1: 'pasantía @ seek by sara blakely ventures (finanzas, operaciones, marketing)',
     exp2025_2: 'estudiando UX/diseño — cambié de énfasis',
     exp2025_3: 'diseño de producto @ polymarket (contrato herramienta de marketing interno)',
     exp2025_4: 'comencé a construir una app para creadores: Kairo',
     year2324: '2023–24',
+    title2324: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA', // ⬅️ pon aquí tu colegio/universidad real
     exp2324_1: 'construí estudio de contenido unipersonal — $250k en campañas',
     exp2324_2: 'ui/ux para productos & plataformas web3',
     exp2324_3: 'construyendo en público con figma make',
     year2122: '2021–22',
+    title2122: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA', // ⬅️ pon aquí tu colegio/universidad real
     exp2122_1: 'lideré estrategia de marca para plataforma web3 (200k usuarios)',
     exp2122_2: 'diseñé campañas con +3M impresiones',
     exp2122_3: 'co-lideré comunidad y producción de eventos',
+
+    // Dos entradas nuevas — reemplaza el texto de ejemplo por el real
+    yearNew1: 'AÑO',
+    titleNew1: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA',
+    expNew1_1: 'detalle uno',
+    expNew1_2: 'detalle dos',
+    yearNew2: 'AÑO',
+    titleNew2: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA',
+    expNew2_1: 'detalle uno',
+    expNew2_2: 'detalle dos',
 
     skillsLabel: '[ herramientas & habilidades ]',
     contactEmail: 'EMAIL',

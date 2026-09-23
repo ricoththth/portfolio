@@ -46,11 +46,14 @@ function PhotoDeck({ images, shuffleLabel }: { images: { img: string; caption: s
   );
 }
 
-function TimelineEntry({ year, items, delay = 0 }: { year: string; items: string[]; delay?: number }) {
+function TimelineEntry({ year, title, items, delay = 0 }: { year: string; title?: string; items: string[]; delay?: number }) {
   return (
     <motion.div className="grid grid-cols-[80px_1fr] gap-4" initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
       <div className="font-['Space_Mono'] text-[10px] text-gray-400 pt-0.5 shrink-0">{year}</div>
       <div className="border-l border-gray-200 pl-4 pb-6">
+        {title && (
+          <div className="font-['Space_Mono'] text-[12px] font-bold uppercase tracking-wide mb-1.5">{title}</div>
+        )}
         <div className="space-y-1 font-['Space_Mono'] text-[11px] text-gray-700">
           {items.map((item, i) => (
             <div key={i} className="flex items-start gap-1.5">
@@ -99,9 +102,11 @@ export function About() {
           <div className="border-b border-gray-200 pb-3 mb-8">
             <h2 className="font-['Space_Mono'] text-[11px] uppercase tracking-[0.3em]">{t('experienceLabel')}</h2>
           </div>
-          <TimelineEntry year={t('year2025')} items={[t('exp2025_1'), t('exp2025_2'), t('exp2025_3'), t('exp2025_4')]} delay={0} />
-          <TimelineEntry year={t('year2324')} items={[t('exp2324_1'), t('exp2324_2'), t('exp2324_3')]} delay={0.1} />
-          <TimelineEntry year={t('year2122')} items={[t('exp2122_1'), t('exp2122_2'), t('exp2122_3')]} delay={0.2} />
+          <TimelineEntry year={t('year2025')} title={t('title2025')} items={[t('exp2025_1'), t('exp2025_2'), t('exp2025_3'), t('exp2025_4')]} delay={0} />
+          <TimelineEntry year={t('year2324')} title={t('title2324')} items={[t('exp2324_1'), t('exp2324_2'), t('exp2324_3')]} delay={0.1} />
+          <TimelineEntry year={t('year2122')} title={t('title2122')} items={[t('exp2122_1'), t('exp2122_2'), t('exp2122_3')]} delay={0.2} />
+          <TimelineEntry year={t('yearNew1')} title={t('titleNew1')} items={[t('expNew1_1'), t('expNew1_2')]} delay={0.3} />
+          <TimelineEntry year={t('yearNew2')} title={t('titleNew2')} items={[t('expNew2_1'), t('expNew2_2')]} delay={0.4} />
         </motion.div>
 
         {/* Skills */}
