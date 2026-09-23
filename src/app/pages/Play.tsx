@@ -63,6 +63,10 @@ export function Play() {
         <div className="mt-4 font-['Space_Mono'] text-[10px] text-gray-400 uppercase tracking-widest">
           {t('playInstruction')}
         </div>
+
+        <div className="mt-10 flex justify-center">
+          <img src={PLAY_IMAGES.banner} alt="Coming up: photobooth" className="w-full max-w-[560px] h-auto" />
+        </div>
       </div>
 
       {hoveredTitle && (

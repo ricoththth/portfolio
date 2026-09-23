@@ -55,7 +55,7 @@ export function Work() {
                 <div className="text-gray-500">{t(project.catKey)}</div>
                 <div className="flex gap-2 mt-1.5 flex-wrap">
                   {project.tagKeys.map((tagKey) => (
-                    <span key={tagKey} className="border border-gray-300 px-1.5 py-0.5 text-[9px] text-gray-500 transition-colors duration-200 group-hover:border-black group-hover:text-black">{t(tagKey)}</span>
+                    <span key={tagKey} className="rounded-full border border-gray-300 px-2 py-0.5 text-[9px] text-gray-500 transition-colors duration-200 group-hover:border-black group-hover:text-black">{t(tagKey)}</span>
                   ))}
                 </div>
               </div>

@@ -10,6 +10,10 @@ export interface ProjectData {
   catKey: string;
   descKey: string;
   tagKeys: string[];
+  /** Optional: when set, the last gallery photo is swapped for a text
+   *  panel showing this copy instead — for projects that need more
+   *  room to explain than a caption allows. */
+  extraTextKey?: string;
 }
 
 // Central source of truth for every case study — used by the Work grid
@@ -27,6 +31,7 @@ export const projects: ProjectData[] = [
     catKey: 'proj1Cat',
     descKey: 'proj1Desc',
     tagKeys: ['proj1Tag1', 'proj1Tag2'],
+    extraTextKey: 'proj1ExtraText',
   },
   {
     id: 2,

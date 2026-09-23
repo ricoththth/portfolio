@@ -46,10 +46,25 @@ import fotoTableroPlay from '../../imports/image-4.png'; // corcho de fondo para
 // mostrarlas como si fueran proyectos propios.
 
 // ───────────────────────────────────────────────────────────────────
+// Archivos subidos por ti (src/assets/uploads/)
+// ───────────────────────────────────────────────────────────────────
+import svgBannerPlay from '../../assets/uploads/banner_play.svg'; // banner "Coming up PHOTOBOOTH"
+import svgLogoPag from '../../assets/uploads/logo-pag.svg'; // logo tipo estrella/sparkle (azul)
+
+// ───────────────────────────────────────────────────────────────────
 // HOME — página de inicio
 // ───────────────────────────────────────────────────────────────────
 export const HOME_IMAGES = {
   perfil: fotoPerfilHome, // foto grande junto a "hi! i'm lizeth"
+};
+
+// ───────────────────────────────────────────────────────────────────
+// MARCA — logo usado en la pestaña del navegador (favicon, ver
+// index.html) y disponible por si luego lo quieres poner también
+// dentro del sitio (nav, footer, etc.)
+// ───────────────────────────────────────────────────────────────────
+export const BRAND_IMAGES = {
+  logo: svgLogoPag,
 };
 
 // ───────────────────────────────────────────────────────────────────
@@ -86,6 +101,7 @@ export const WORK_IMAGES = {
 // ───────────────────────────────────────────────────────────────────
 export const PLAY_IMAGES = {
   tablero: fotoTableroPlay,
+  banner: svgBannerPlay, // se muestra debajo del tablero de fotos
   fotos: [
     { img: fotoPosterTaller,    titleKey: 'photo1Title' },
     { img: fotoRetratoAbrazo,   titleKey: 'photo2Title' },

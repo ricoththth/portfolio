@@ -61,7 +61,7 @@ export function ProjectDetail() {
           <div className="flex flex-col items-start md:items-end gap-3 shrink-0">
             <div className="flex gap-2 flex-wrap md:justify-end">
               {project.tagKeys.map((tagKey) => (
-                <span key={tagKey} className="border border-black px-2 py-1 font-['Space_Mono'] text-[10px] uppercase tracking-wider">{t(tagKey)}</span>
+                <span key={tagKey} className="rounded-full border border-black px-3 py-1 font-['Space_Mono'] text-[10px] uppercase tracking-wider">{t(tagKey)}</span>
               ))}
             </div>
             <p className="font-['Space_Mono'] text-[12px] leading-relaxed text-gray-600 max-w-sm md:max-w-md md:text-right whitespace-pre-line">
@@ -76,19 +76,31 @@ export function ProjectDetail() {
         </motion.div>
 
         {/* ── Gallery ─────────────────────────────────────────────── */}
+        {/* When a project has extraTextKey, its last photo slot becomes a
+            text panel instead — for case studies that need more room to
+            explain than a caption allows. */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16">
-          {project.gallery.slice(1).map((img, i) => (
-            <motion.div
-              key={i}
-              custom={i + 2}
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              className={`overflow-hidden bg-gray-100 aspect-[4/3] ${i === 0 ? 'md:col-span-2 md:aspect-[16/8]' : ''}`}
-            >
-              <img src={img} alt={`${t(project.titleKey)} ${i + 2}`} className="w-full h-full object-cover" loading="lazy" decoding="async" />
-            </motion.div>
-          ))}
+          {project.gallery.slice(1).map((img, i, arr) => {
+            const isTextSlot = !!project.extraTextKey && i === arr.length - 1;
+            return (
+              <motion.div
+                key={i}
+                custom={i + 2}
+                variants={fadeUp}
+                initial="hidden"
+                animate="show"
+                className={`overflow-hidden aspect-[4/3] ${i === 0 ? 'md:col-span-2 md:aspect-[16/8]' : ''} ${isTextSlot ? 'border border-black p-6 md:p-8 flex items-center' : 'bg-gray-100'}`}
+              >
+                {isTextSlot ? (
+                  <p className="font-['Space_Mono'] text-[11px] leading-relaxed text-gray-700 whitespace-pre-line">
+                    {t(project.extraTextKey!)}
+                  </p>
+                ) : (
+                  <img src={img} alt={`${t(project.titleKey)} ${i + 2}`} className="w-full h-full object-cover" loading="lazy" decoding="async" />
+                )}
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* ── Prev / Next ─────────────────────────────────────────── */}
