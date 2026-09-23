@@ -79,6 +79,9 @@ export const projects: ProjectData[] = [
     catKey: 'proj5Cat',
     descKey: 'proj5Desc',
     tagKeys: ['proj5Tag1', 'proj5Tag2', 'proj5Tag3'],
+    externalUrl: 'https://www.bettercampus.com.co/',
+    externalPromptKey: 'proj5ExternalPrompt',
+    externalButtonKey: 'proj5ExternalButton',
   },
 ];
 

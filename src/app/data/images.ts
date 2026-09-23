@@ -65,6 +65,7 @@ import imgForjaServicioCliente from '../../assets/uploads/forja-servicio-cliente
 import imgForjaHomepage from '../../assets/uploads/forja-homepage.webp'; // homepage completa rediseñada (captura muy larga)
 import imgForjaAntes from '../../assets/uploads/forja-antes.png'; // cómo se veía el sitio ANTES del rediseño
 import imgBetterCampusCover from '../../assets/uploads/bettercampus-cover.webp'; // portada / logo de BetterCampus
+import imgBetterCampusHome from '../../assets/uploads/bettercampus-home.webp'; // captura del home de BetterCampus
 
 // ───────────────────────────────────────────────────────────────────
 // HOME — página de inicio
@@ -103,7 +104,7 @@ export const ABOUT_DECK = [
 export const WORK_IMAGES = {
   proj3: { cover: imgMoodyLogo,          gallery: [imgMoodyLogo,          imgMoodyResearch,      imgMoodyUsuarios,     imgMoodyStorytelling] }, // MOODY — completo, las 3 salen anchas (ver wideSlots en projects.ts)
   proj4: { cover: imgForjaHero,          gallery: [imgForjaHero,          imgForjaAntes,          imgForjaServicioCliente, imgForjaHomepage] }, // FORJA — ver stackedColumns en projects.ts
-  proj5: { cover: imgBetterCampusCover,  gallery: [imgBetterCampusCover,  fotoPendiente,          fotoPendiente,        fotoPendiente] }, // BETTER CAMPUS — foto real, faltan más
+  proj5: { cover: imgBetterCampusCover,  gallery: [imgBetterCampusCover,  imgBetterCampusHome,           fotoPendiente,        fotoPendiente] }, // BETTER CAMPUS — foto real, faltan más
   // ícono que aparece encima de la portada al pasar el mouse (solo en Work)
   hoverIcon: svgHoverProjects,
 };

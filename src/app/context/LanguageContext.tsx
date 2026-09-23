@@ -98,7 +98,9 @@ const translations = {
     proj3ExternalButton: 'Click here',
     proj4Desc: 'Forja was another diploma project — a full redesign that started with a heuristic evaluation of the existing site and carried through to a high-fidelity prototype.',
     proj4SideText: "The heuristic evaluation surfaced several visual and navigation inconsistencies — each page felt like it belonged to a different site. On the Customer Service page, I unified the visual hierarchy, simplified the FAQ accordion, and aligned the color palette with the rest of the site so the experience reads as one coherent brand from start to finish.",
-    proj5Desc: "Better Campus was a heuristic analysis I did as part of a research group (Semillero) at Universidad Nacional (DIN'T). It's a student-to-student platform that helps you build your class schedule and connects with UNAL's academic system (SIA).",
+    proj5Desc: "Better Campus was a heuristic analysis I did as part of a research group (Semillero) at Universidad Nacional (DIN'T). It's a student-to-student platform that helps you build your class schedule and connects with UNAL's academic system (SIA).\n\nMy role was the heuristic evaluation, reviewing the navigation flows, and testing the features. That work went to the BetterCampus team as feedback, and they implemented it. Afterwards, on the UI side, we worked as a team and used atomic design to implement a more comfortable style for the user.",
+    proj5ExternalPrompt: 'Want to read more and try it?',
+    proj5ExternalButton: 'Click here',
 
     // ── PLAY ─────────────────────────────────────────────────────
     playInstruction: 'drag some of my work <3',
@@ -205,8 +207,10 @@ const translations = {
     proj3ExternalPrompt: '¿Quieres leer más y probarlo?',
     proj3ExternalButton: 'Click aquí',
     proj4Desc: 'Forja fue otro proyecto del diplomado: un rediseño completo que arrancó con una evaluación heurística del sitio existente y llegó hasta el desarrollo de un prototipo de alta fidelidad.',
-    proj4SideText: 'La evaluación heurística reveló varias inconsistencias visuales y de navegación entre secciones — cada página parecía pertenecer a un sitio distinto. En "Servicio al Cliente" unifiqué la jerarquía visual, simplifiqué el acordeón de preguntas frecuentes y alineé la paleta de color con el resto del sitio, para que la experiencia se sintiera como una sola marca coherente de principio a fin.',
-    proj5Desc: "Better Campus fue un análisis heurístico realizado en el Semillero de la Universidad Nacional (DIN'T). Es una plataforma de estudiantes para estudiantes que brinda apoyo para armar el horario de clases y se vincula con el SIA de la UNAL.",
+    proj4SideText: 'La evaluación heurística reveló varias inconsistencias visuales y de navegación entre secciones cada página parecía pertenecer a un sitio distinto.',
+    proj5Desc: "Better Campus fue un análisis heurístico realizado en el Semillero de la Universidad Nacional (DIN'T). Es una plataforma de estudiantes para estudiantes que brinda apoyo para armar el horario de clases y se vincula con el SIA de la UNAL.\n\nMi rol fue la evaluación heurística, la revisión de los flujos de navegación y el testeo de las funcionalidades. Ese trabajo se le enviaba como feedback al equipo de BetterCampus, y ellos lo implementaban. Después, en la parte de UI, trabajamos en equipo e implementamos, a través del diseño atómico, un estilo más cómodo para el usuario.",
+    proj5ExternalPrompt: '¿Quieres leer más y probarlo?',
+    proj5ExternalButton: 'Click aquí',
 
     // ── PLAY ─────────────────────────────────────────────────────
     playInstruction: 'arrastra algunos de mis trabajos <3',
