@@ -22,6 +22,17 @@ export interface ProjectData {
 // this file only decides titles, tags, and copy.
 export const projects: ProjectData[] = [
   {
+    id: 3,
+    slug: 'moody',
+    cover: WORK_IMAGES.proj3.cover,
+    gallery: WORK_IMAGES.proj3.gallery,
+    year: '2022',
+    titleKey: 'proj3Title',
+    catKey: 'proj3Cat',
+    descKey: 'proj3Desc',
+    tagKeys: ['proj3Tag1', 'proj3Tag2', 'proj3Tag3'],
+  },
+  {
     id: 1,
     slug: 'genrame-idea',
     cover: WORK_IMAGES.proj1.cover,
@@ -43,17 +54,6 @@ export const projects: ProjectData[] = [
     catKey: 'proj2Cat',
     descKey: 'proj2Desc',
     tagKeys: ['proj2Tag1', 'proj2Tag2'],
-  },
-  {
-    id: 3,
-    slug: 'moody',
-    cover: WORK_IMAGES.proj3.cover,
-    gallery: WORK_IMAGES.proj3.gallery,
-    year: '2022',
-    titleKey: 'proj3Title',
-    catKey: 'proj3Cat',
-    descKey: 'proj3Desc',
-    tagKeys: ['proj3Tag1', 'proj3Tag2', 'proj3Tag3'],
   },
   {
     id: 4,

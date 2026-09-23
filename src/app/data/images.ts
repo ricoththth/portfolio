@@ -58,6 +58,7 @@ import webpBannerPlay from '../../assets/uploads/banner_play.webp'; // banner "C
 import svgLogoPag from '../../assets/uploads/logo-pag.svg'; // logo tipo estrella/sparkle (azul)
 import svgHoverProjects from '../../assets/uploads/hover-projects.svg'; // ícono decorativo (azul) que aparece encima de las fotos de Work al hacer hover
 import imgMoodyLogo from '../../assets/uploads/moody-logo.png'; // logo/mascota del proyecto Moody (3 "blobs" con cara)
+import imgMoodyResearch from '../../assets/uploads/moody-research-entrevistas.png'; // hallazgos de entrevistas/investigación de Moody
 
 // ───────────────────────────────────────────────────────────────────
 // HOME — página de inicio
@@ -96,7 +97,7 @@ export const ABOUT_DECK = [
 export const WORK_IMAGES = {
   proj1: { cover: fotoTallerAbrazo,      gallery: [fotoTallerAbrazo,      fotoPosterTaller,      fotoPendiente,        fotoCollageMoodboard] },
   proj2: { cover: fotoRetratoAbrazo,     gallery: [fotoRetratoAbrazo,     fotoPendiente,          fotoPendiente,        fotoTallerAbrazo] },
-  proj3: { cover: imgMoodyLogo,          gallery: [imgMoodyLogo,          fotoPendiente,         fotoPendiente,        fotoPendiente] }, // MOODY — foto real, faltan más
+  proj3: { cover: imgMoodyLogo,          gallery: [imgMoodyLogo,          imgMoodyResearch,      fotoPendiente,        fotoPendiente] }, // MOODY — la 1ra foto de galería sale grande
   proj4: { cover: fotoDesfileTrio,       gallery: [fotoDesfileTrio,       fotoPendiente,          fotoCollageMoodboard,fotoPendiente] },
   proj5: { cover: fotoDesfilePasarela,   gallery: [fotoDesfilePasarela,   fotoCollageMoodboard,  fotoPendiente,        fotoPendiente] },
   proj6: { cover: fotoCollageHalloween,  gallery: [fotoCollageHalloween,  fotoPendiente,          fotoPendiente,        fotoPendiente] },
