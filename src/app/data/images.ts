@@ -48,8 +48,9 @@ import fotoTableroPlay from '../../imports/image-4.png'; // corcho de fondo para
 // ───────────────────────────────────────────────────────────────────
 // Archivos subidos por ti (src/assets/uploads/)
 // ───────────────────────────────────────────────────────────────────
-import svgBannerPlay from '../../assets/uploads/banner_play.svg'; // banner "Coming up PHOTOBOOTH"
+import webpBannerPlay from '../../assets/uploads/banner_play.webp'; // banner "Coming up PHOTOBOOTH" (versión webp, reemplaza al svg)
 import svgLogoPag from '../../assets/uploads/logo-pag.svg'; // logo tipo estrella/sparkle (azul)
+import svgHoverProjects from '../../assets/uploads/hover-projects.svg'; // ícono decorativo (azul) que aparece encima de las fotos de Work al hacer hover
 
 // ───────────────────────────────────────────────────────────────────
 // HOME — página de inicio
@@ -94,6 +95,8 @@ export const WORK_IMAGES = {
   proj5: { cover: fotoDesfilePasarela,   gallery: [fotoDesfilePasarela,   fotoCollageMoodboard,  fotoOnSet,           fotoRetratoHalftone] },
   proj6: { cover: fotoCollageHalloween,  gallery: [fotoCollageHalloween,  fotoRetratoHalftone,   fotoCafe,            fotoTiendaSelfie] },
   proj7: { cover: fotoTexturaRosa,       gallery: [fotoTexturaRosa,       fotoOnSet,             fotoCollageMoodboard,fotoCafe] },
+  // ícono que aparece encima de la portada al pasar el mouse (solo en Work)
+  hoverIcon: svgHoverProjects,
 };
 
 // ───────────────────────────────────────────────────────────────────
@@ -101,7 +104,7 @@ export const WORK_IMAGES = {
 // ───────────────────────────────────────────────────────────────────
 export const PLAY_IMAGES = {
   tablero: fotoTableroPlay,
-  banner: svgBannerPlay, // se muestra debajo del tablero de fotos
+  banner: webpBannerPlay, // se muestra debajo del tablero de fotos
   fotos: [
     { img: fotoPosterTaller,    titleKey: 'photo1Title' },
     { img: fotoRetratoAbrazo,   titleKey: 'photo2Title' },

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTransition } from '../context/TransitionContext';
 import { projects } from '../data/projects';
+import { WORK_IMAGES } from '../data/images';
 
 export function Work() {
   const { t } = useLanguage();
@@ -44,8 +45,15 @@ export function Work() {
                 }
               }}
             >
-              <div className="overflow-hidden bg-gray-100 mb-3 aspect-[4/3]">
+              <div className="relative overflow-hidden bg-gray-100 mb-3 aspect-[4/3]">
                 <img src={project.cover} alt={t(project.titleKey)} className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:grayscale" loading="lazy" decoding="async" />
+                {/* Hover-only accent icon — Work grid exclusively, sits on top of the grayscale photo */}
+                <img
+                  src={WORK_IMAGES.hoverIcon}
+                  alt=""
+                  aria-hidden="true"
+                  className="absolute inset-0 m-auto w-2/5 h-2/5 object-contain opacity-0 scale-75 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:scale-100 pointer-events-none"
+                />
               </div>
               <div className="font-['Space_Mono'] text-[10px] uppercase tracking-wider">
                 <div className="flex items-baseline justify-between mb-1">
