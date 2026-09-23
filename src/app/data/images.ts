@@ -25,20 +25,24 @@ import fotoPosterTaller from '../../imports/Desktop3/70c0b3d97ab60923b919b1ee9b1
 import fotoCollageHalloween from '../../imports/Desktop3/12777d0292107c4af8e01b8dacef28afb348c064.png'; // collage de fotos del taller (máscaras, Pac-Man)
 import fotoTexturaRosa from '../../imports/Desktop3/df869e1615c57ee0774db69b610db62ce72c7873.png'; // textura rosa (mesa de corte), abstracta
 
+// Las 4 fotos "about-p*" son EXCLUSIVAS del slider de About — no se
+// reutilizan en ningún otro lado del sitio (Work, Play, etc.)
 import fotoRetratoHalftone from '../../imports/Desktop3/about-p1.png'; // retrato en halftone con estrellas dibujadas a mano
 import fotoCafe from '../../imports/Desktop3/about-p2.png'; // tomando café, viaje
 import fotoOnSet from '../../imports/Desktop3/about-p4.png'; // con cámara Canon, "en set"
 import fotoTiendaSelfie from '../../imports/Desktop3/about-p5.png'; // selfie en espejo dentro de una tienda
 
-import fotoAboutHalftone from '../../imports/Desktop4/df70452dbca136a2b61c68a126938f310aafc7bd.png'; // retrato en halftone blanco y negro
-// ⚠️ este archivo original venía completamente en blanco (roto) — lo reemplazamos por fotoCollageMoodboard más abajo
-// import fotoAboutBlanco from '../../imports/Desktop4/b846cac68644cc134ff6df02c312aa0f977535c7.png';
-
 import fotoProductoUI from '../../imports/image-1.png'; // capturas de producto propias (Polymarket, Koino) + logos de marcas
 import fotoCollageMoodboard from '../../imports/image-3.png'; // moodboard propio sobre la mesa de corte rosa
-import fotoGalapagos from '../../imports/image-7.png'; // foto personal, Galápagos
 
 import fotoTableroPlay from '../../imports/image-4.png'; // corcho de fondo para el tablero de "Play"
+
+// ⚠️ Placeholder intencional: espacios de galería de Work que antes
+// usaban las fotos "about-p*" (ya no, ver arriba) y todavía no tienen
+// una foto real del proyecto. Se ve como imagen rota a propósito —
+// cuando me pases las fotos de cada proyecto, reemplaza esto por tus
+// imports reales.
+const fotoPendiente = '/FOTO-PENDIENTE-DEL-PROYECTO.jpg';
 
 // ⚠️ image-2.png y image-5.png NO se usan: son capturas de referencia de
 // sitios de OTRAS personas (el portafolio "Eileen Yang" y la tienda
@@ -70,17 +74,16 @@ export const BRAND_IMAGES = {
 
 // ───────────────────────────────────────────────────────────────────
 // ABOUT — mazo de fotos que se puede barajar ("click to shuffle")
-// El orden aquí es el orden inicial del mazo; cada entrada usa una
-// clave de traducción (cap1..cap7) definida en LanguageContext.tsx
+// Son EXACTAMENTE las 4 fotos "about-p*" de Desktop3 — no se mezclan
+// con otras fotos del sitio. El orden aquí es el orden inicial del
+// mazo; cada entrada usa una clave de traducción (cap1..cap4)
+// definida en LanguageContext.tsx
 // ───────────────────────────────────────────────────────────────────
 export const ABOUT_DECK = [
-  { img: fotoGalapagos,        captionKey: 'cap1' }, // galápagos, 2024
-  { img: fotoAboutHalftone,    captionKey: 'cap2' }, // retrato, 2024
-  { img: fotoPosterTaller,     captionKey: 'cap3' }, // taller, 2024
-  { img: fotoDesfileTrio,      captionKey: 'cap4' }, // comunidad, 2022
-  { img: fotoOnSet,            captionKey: 'cap5' }, // en set, 2023
-  { img: fotoTallerAbrazo,     captionKey: 'cap6' }, // generame idea, 2024
-  { img: fotoCollageMoodboard, captionKey: 'cap7' }, // construyendo en público
+  { img: fotoRetratoHalftone, captionKey: 'cap1' }, // retrato, 2024
+  { img: fotoCafe,            captionKey: 'cap2' }, // café, 2023
+  { img: fotoOnSet,           captionKey: 'cap3' }, // en set, 2023
+  { img: fotoTiendaSelfie,    captionKey: 'cap4' }, // de compras, 2024
 ];
 
 // ───────────────────────────────────────────────────────────────────
@@ -88,13 +91,13 @@ export const ABOUT_DECK = [
 // (usado por src/app/data/projects.ts — no lo edites ahí, edítalo aquí)
 // ───────────────────────────────────────────────────────────────────
 export const WORK_IMAGES = {
-  proj1: { cover: fotoTallerAbrazo,      gallery: [fotoTallerAbrazo,      fotoPosterTaller,      fotoRetratoHalftone, fotoCollageMoodboard] },
-  proj2: { cover: fotoRetratoAbrazo,     gallery: [fotoRetratoAbrazo,     fotoCafe,              fotoOnSet,           fotoTallerAbrazo] },
-  proj3: { cover: fotoProductoUI,        gallery: [fotoProductoUI,        fotoPosterTaller,      fotoOnSet,           fotoTiendaSelfie] },
-  proj4: { cover: fotoDesfileTrio,       gallery: [fotoDesfileTrio,       fotoTiendaSelfie,      fotoCollageMoodboard,fotoCafe] },
-  proj5: { cover: fotoDesfilePasarela,   gallery: [fotoDesfilePasarela,   fotoCollageMoodboard,  fotoOnSet,           fotoRetratoHalftone] },
-  proj6: { cover: fotoCollageHalloween,  gallery: [fotoCollageHalloween,  fotoRetratoHalftone,   fotoCafe,            fotoTiendaSelfie] },
-  proj7: { cover: fotoTexturaRosa,       gallery: [fotoTexturaRosa,       fotoOnSet,             fotoCollageMoodboard,fotoCafe] },
+  proj1: { cover: fotoTallerAbrazo,      gallery: [fotoTallerAbrazo,      fotoPosterTaller,      fotoPendiente,        fotoCollageMoodboard] },
+  proj2: { cover: fotoRetratoAbrazo,     gallery: [fotoRetratoAbrazo,     fotoPendiente,          fotoPendiente,        fotoTallerAbrazo] },
+  proj3: { cover: fotoProductoUI,        gallery: [fotoProductoUI,        fotoPosterTaller,      fotoPendiente,        fotoPendiente] },
+  proj4: { cover: fotoDesfileTrio,       gallery: [fotoDesfileTrio,       fotoPendiente,          fotoCollageMoodboard,fotoPendiente] },
+  proj5: { cover: fotoDesfilePasarela,   gallery: [fotoDesfilePasarela,   fotoCollageMoodboard,  fotoPendiente,        fotoPendiente] },
+  proj6: { cover: fotoCollageHalloween,  gallery: [fotoCollageHalloween,  fotoPendiente,          fotoPendiente,        fotoPendiente] },
+  proj7: { cover: fotoTexturaRosa,       gallery: [fotoTexturaRosa,       fotoPendiente,          fotoCollageMoodboard,fotoPendiente] },
   // ícono que aparece encima de la portada al pasar el mouse (solo en Work)
   hoverIcon: svgHoverProjects,
 };
