@@ -28,21 +28,21 @@ const translations = {
     role1Label: 'creative',
     role1Item1: 'Mixed media',
     role1Item2: 'Motion graphics',
-    role1Item3: 'ui/ux for products + platforms',
+    role1Item3: 'ui/ux',
 
-    role2Label: 'product designer & strategist',
+    role2Label: 'product designer',
     role2Item1: 'prd writing, scoping, user research',
     role2Item2: 'cross-functional team coordination',
 
-    role3Label: 'AI-design student',
+    role3Label: 'design student',
     role3Item1: 'leveraging ai workflows in daily practice',
-    role3Item2: 'vibe code (figma→claude→shipped)',
+    role3Item2: 'vibe code',
     role3Item3: 'interdisciplinary experimentation',
 
-    role4Label: 'lifelong student',
-    role4Item1: 'failing forward in public',
-    role4Item2: 'design thinking meets technical execution',
-    role4Item3: 'building things that actually matter',
+    role4Label: '',
+    role4Item1: '',
+    role4Item2: '',
+    role4Item3: '',
 
     notableLabel: 'notable',
     stat1Value: 'DESIGN',
@@ -54,18 +54,18 @@ const translations = {
 
     currentlyLabel: 'currently',
     current1: '⦿ studying Web3',
-    current2: '⦿ seventh semester of digital design',
+    current2: '⦿ eighth semester of digital design',
 
-    separator: 'design · strategy · product · brand · ai · ux research · content · campaigns · web3 · 0→1',
+    separator: 'design · strategy · product · brand · ai · ux research · content · web3 ·',
     viewAllWork: 'View all work',
 
     // ── ABOUT ────────────────────────────────────────────────────
     aboutLabel: 'about',
     myStory: 'MY STORY',
-    bio1: "hi! i'm lizeth — a creative content (D2C+) designer, builder, and strategist. i like working at the intersection of brand, product, and people. i've built a one-woman content studio, led brand strategy for web3 platforms with 200k+ users, designed campaigns with $250k+ in revenue, and shipped 0→1 products from idea to launch.",
-    bio2: 'i believe that a deep understanding of human needs is what makes anything worth building — whether media, technology, or community. my mission is to inspire people to explore, create, & experience life boldly.',
-    bio3: 'outside work, i love lifting, running, traveling, EDM music, deep conversations, & eating literally everything in sight!! ●',
-    bio4: 'see a bit of my story below :)',
+    bio1: "hi! i'm lizeth, i'm a creative. i like working at the intersection of brand, product, and people.",
+    bio2: 'i believe that deeply understanding human needs is what makes anything worth building — whether through visual media, technology, or community. my mission is to inspire people to explore, create, & live boldly.',
+    bio3: 'outside work, i love working out, running, traveling, and screen printing ●',
+    bio4: "here's a bit of my life :)",
 
     cap1: 'galapagos, 2024',
     cap2: 'portrait, 2024',
@@ -156,21 +156,21 @@ const translations = {
     role1Label: 'creativa',
     role1Item1: 'Multimedia',
     role1Item2: 'Motion graphics',
-    role1Item3: 'ui/ux para productos + plataformas',
+    role1Item3: 'ui/ux',
 
-    role2Label: 'diseñadora de producto & estratega',
+    role2Label: 'diseñadora de producto',
     role2Item1: 'prd, alcance, investigación de usuarios',
     role2Item2: 'coordinación de equipos cross-funcionales',
 
-    role3Label: 'estudiante de diseño + IA',
+    role3Label: 'estudiante de diseño',
     role3Item1: 'flujos de trabajo con IA en práctica diaria',
-    role3Item2: 'vibe code (figma→claude→shipped)',
+    role3Item2: 'vibe code',
     role3Item3: 'experimentación interdisciplinaria',
 
-    role4Label: 'estudiante de por vida',
-    role4Item1: 'aprendiendo en público',
-    role4Item2: 'design thinking + ejecución técnica',
-    role4Item3: 'construyendo cosas que realmente importan',
+    role4Label: '',
+    role4Item1: '',
+    role4Item2: '',
+    role4Item3: '',
 
     notableLabel: 'destacado',
     stat1Value: 'DISEÑO',
@@ -182,18 +182,18 @@ const translations = {
 
     currentlyLabel: 'actualmente',
     current1: '⦿ estudiando Web3',
-    current2: '⦿ séptimo semestre de diseño digital',
+    current2: '⦿ Octavo semestre de diseño digital',
 
-    separator: 'diseño · estrategia · producto · marca · ia · investigación ux · contenido · campañas · web3 · 0→1',
+    separator: 'diseño · estrategia · producto · marca · ia · investigación ux · contenido · web3 ·',
     viewAllWork: 'Ver todo el trabajo',
 
     // ── ABOUT ────────────────────────────────────────────────────
     aboutLabel: 'sobre mí',
     myStory: 'MI HISTORIA',
-    bio1: '¡hola! soy lizeth — diseñadora creativa de contenido (D2C+), constructora y estratega. me gusta trabajar en la intersección de marca, producto y personas. construí un estudio de contenido unipersonal, lideré la estrategia de marca para plataformas web3 con +200k usuarios, diseñé campañas con +$250k en ingresos y lancé productos 0→1 de la idea al mercado.',
-    bio2: 'creo que entender profundamente las necesidades humanas es lo que hace que algo valga la pena construir — ya sea medios, tecnología o comunidad. mi misión es inspirar a las personas a explorar, crear y vivir con valentía.',
-    bio3: 'fuera del trabajo, me encanta el ejercicio, correr, viajar, la música EDM, las conversaciones profundas y comer literalmente todo lo que encuentro!! ●',
-    bio4: 'aquí un poco de mi historia :)',
+    bio1: '¡hola! soy lizeth soy una creativa. Me gusta trabajar en la intersección de marca, producto y personas.',
+    bio2: 'Me gusta comprender profundamente las necesidades humanas es lo que hace que algo valga la pena construir ya sea desde medios visuales, tecnología o comunidad. mi misión es inspirar a las personas a explorar, crear y vivir con valentía.',
+    bio3: 'fuera del trabajo, me encanta el ejercicio, correr, viajar y hacer serigrafia ●',
+    bio4: 'aquí un poco de mi vida :)',
 
     cap1: 'galápagos, 2024',
     cap2: 'retrato, 2024',
