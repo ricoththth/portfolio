@@ -32,8 +32,10 @@ import fotoCafe from '../../imports/Desktop3/about-p2.png'; // tomando café, vi
 import fotoOnSet from '../../imports/Desktop3/about-p4.png'; // con cámara Canon, "en set"
 import fotoTiendaSelfie from '../../imports/Desktop3/about-p5.png'; // selfie en espejo dentro de una tienda
 
-import fotoProductoUI from '../../imports/image-1.png'; // capturas de producto propias (Polymarket, Koino) + logos de marcas
 import fotoCollageMoodboard from '../../imports/image-3.png'; // moodboard propio sobre la mesa de corte rosa
+// fotoProductoUI (image-1.png, capturas de Polymarket/Koino) quedó sin
+// usar al reemplazar MAKERSVILLE por MOODY — sigue disponible en
+// src/imports/image-1.png si la quieres para otro proyecto.
 
 import fotoTableroPlay from '../../imports/image-4.png'; // corcho de fondo para el tablero de "Play"
 
@@ -55,6 +57,7 @@ const fotoPendiente = '/FOTO-PENDIENTE-DEL-PROYECTO.jpg';
 import webpBannerPlay from '../../assets/uploads/banner_play.webp'; // banner "Coming up PHOTOBOOTH" (versión webp, reemplaza al svg)
 import svgLogoPag from '../../assets/uploads/logo-pag.svg'; // logo tipo estrella/sparkle (azul)
 import svgHoverProjects from '../../assets/uploads/hover-projects.svg'; // ícono decorativo (azul) que aparece encima de las fotos de Work al hacer hover
+import imgMoodyLogo from '../../assets/uploads/moody-logo.png'; // logo/mascota del proyecto Moody (3 "blobs" con cara)
 
 // ───────────────────────────────────────────────────────────────────
 // HOME — página de inicio
@@ -93,7 +96,7 @@ export const ABOUT_DECK = [
 export const WORK_IMAGES = {
   proj1: { cover: fotoTallerAbrazo,      gallery: [fotoTallerAbrazo,      fotoPosterTaller,      fotoPendiente,        fotoCollageMoodboard] },
   proj2: { cover: fotoRetratoAbrazo,     gallery: [fotoRetratoAbrazo,     fotoPendiente,          fotoPendiente,        fotoTallerAbrazo] },
-  proj3: { cover: fotoProductoUI,        gallery: [fotoProductoUI,        fotoPosterTaller,      fotoPendiente,        fotoPendiente] },
+  proj3: { cover: imgMoodyLogo,          gallery: [imgMoodyLogo,          fotoPendiente,         fotoPendiente,        fotoPendiente] }, // MOODY — foto real, faltan más
   proj4: { cover: fotoDesfileTrio,       gallery: [fotoDesfileTrio,       fotoPendiente,          fotoCollageMoodboard,fotoPendiente] },
   proj5: { cover: fotoDesfilePasarela,   gallery: [fotoDesfilePasarela,   fotoCollageMoodboard,  fotoPendiente,        fotoPendiente] },
   proj6: { cover: fotoCollageHalloween,  gallery: [fotoCollageHalloween,  fotoPendiente,          fotoPendiente,        fotoPendiente] },

@@ -46,14 +46,14 @@ export const projects: ProjectData[] = [
   },
   {
     id: 3,
-    slug: 'makersville',
+    slug: 'moody',
     cover: WORK_IMAGES.proj3.cover,
     gallery: WORK_IMAGES.proj3.gallery,
     year: '2022',
     titleKey: 'proj3Title',
     catKey: 'proj3Cat',
     descKey: 'proj3Desc',
-    tagKeys: ['proj3Tag1', 'proj3Tag2'],
+    tagKeys: ['proj3Tag1', 'proj3Tag2', 'proj3Tag3'],
   },
   {
     id: 4,
