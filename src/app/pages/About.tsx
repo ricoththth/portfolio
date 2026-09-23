@@ -1,13 +1,12 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { ABOUT_DECK } from '../data/images';
 
 const deckRots = [9, -6, 14, -11, 4, -16, 7];
 
-function PhotoDeck({ images, shuffleLabel }: { images: { img: string; caption: string }[]; shuffleLabel: string }) {
+function PhotoDeck({ images, shuffleLabel }: { images: { img: string }[]; shuffleLabel: string }) {
   const [stack, setStack] = useState(images.map((_, i) => i));
-  const topIdx = stack[stack.length - 1];
 
   const cycle = () => setStack(prev => {
     const next = [...prev];
@@ -17,7 +16,7 @@ function PhotoDeck({ images, shuffleLabel }: { images: { img: string; caption: s
   });
 
   return (
-    <div className="flex flex-col items-center gap-5">
+    <div className="flex flex-col items-center gap-4">
       <div className="relative cursor-pointer select-none" style={{ width: 220, height: 285 }} onClick={cycle}>
         {stack.map((imgIdx, pos) => {
           const isTop = pos === stack.length - 1;
@@ -31,16 +30,11 @@ function PhotoDeck({ images, shuffleLabel }: { images: { img: string; caption: s
               transition={{ type: 'spring', stiffness: 320, damping: 30 }}
               whileHover={isTop ? { y: depth * 3 - 10, scale: 1.03 } : {}}
             >
-              <img src={images[imgIdx].img} alt={images[imgIdx].caption} className="w-full object-cover pointer-events-none" style={{ height: 195 }} loading="lazy" decoding="async" />
+              <img src={images[imgIdx].img} alt="" className="w-full object-cover pointer-events-none" style={{ height: 195 }} loading="lazy" decoding="async" />
             </motion.div>
           );
         })}
       </div>
-      <AnimatePresence mode="wait">
-        <motion.p key={topIdx} className="font-['Space_Mono'] text-[10px] uppercase tracking-widest text-gray-500 text-center" initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }} transition={{ duration: 0.2 }}>
-          {images[topIdx].caption}
-        </motion.p>
-      </AnimatePresence>
       <p className="font-['Space_Mono'] text-[9px] text-gray-300 uppercase tracking-[0.3em]">{shuffleLabel}</p>
     </div>
   );
@@ -72,7 +66,7 @@ const skills = ['Figma', 'Adobe CC', 'Premiere Pro', 'After Effects', 'Claude / 
 export function About() {
   const { t } = useLanguage();
 
-  const deckImages = ABOUT_DECK.map(({ img, captionKey }) => ({ img, caption: t(captionKey) }));
+  const deckImages = ABOUT_DECK.map(({ img }) => ({ img }));
 
   return (
     <div className="min-h-screen bg-white">
@@ -92,7 +86,7 @@ export function About() {
             <p className="font-['Space_Mono'] text-[11px] leading-[1.9] text-gray-500">{t('bio3')}</p>
             <p className="font-['Space_Mono'] text-[10px] text-gray-400 mt-3">{t('bio4')}</p>
           </motion.div>
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }} className="flex flex-col items-center pt-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.6, ease: [0.16, 1, 0.3, 1] }} className="flex flex-col items-center">
             <PhotoDeck images={deckImages} shuffleLabel={t('clickToShuffle')} />
           </motion.div>
         </div>
@@ -102,10 +96,10 @@ export function About() {
           <div className="border-b border-gray-200 pb-3 mb-8">
             <h2 className="font-['Space_Mono'] text-[11px] uppercase tracking-[0.3em]">{t('experienceLabel')}</h2>
           </div>
-          <TimelineEntry year={t('year2025')} items={[t('exp2025_1')]} delay={0} />
-          <TimelineEntry year={t('year2324')} items={[t('exp2324_1')]} delay={0.1} />
-          <TimelineEntry year={t('year2122')} items={[t('exp2122_1')]} delay={0.2} />
-          <TimelineEntry year={t('yearCourse')} items={[t('expCourse_1')]} delay={0.3} />
+          <TimelineEntry year={t('yearCourse')} items={[t('expCourse_1')]} delay={0} />
+          <TimelineEntry year={t('year2025')} items={[t('exp2025_1')]} delay={0.1} />
+          <TimelineEntry year={t('year2324')} items={[t('exp2324_1')]} delay={0.2} />
+          <TimelineEntry year={t('year2122')} items={[t('exp2122_1')]} delay={0.3} />
         </motion.div>
 
         {/* Skills */}

@@ -75,7 +75,7 @@ const translations = {
     exp2324_1: 'Diploma in UX/UI Design — Universidad Nacional de Colombia',
     year2122: '2022',
     exp2122_1: 'Professional Technician in Data Processing — Universidad Kuepa',
-    yearCourse: '2025',
+    yearCourse: '2026',
     expCourse_1: 'UX/UI Course — Pieri Studio',
 
     skillsLabel: '[ tools & skills ]',
@@ -189,7 +189,7 @@ const translations = {
     exp2324_1: 'Diplomado en Diseño Ux-Ui - Universidad Nacional De Colombia',
     year2122: '2022',
     exp2122_1: 'Técnico Profesional en Procesamiento de Datos - Universidad Kuepa',
-    yearCourse: '2025',
+    yearCourse: '2026',
     expCourse_1: 'Curso Ux / Ui - Pieri Studio',
 
     skillsLabel: '[ herramientas & habilidades ]',
