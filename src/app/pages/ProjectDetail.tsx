@@ -64,7 +64,7 @@ export function ProjectDetail() {
                 <span key={tagKey} className="border border-black px-2 py-1 font-['Space_Mono'] text-[10px] uppercase tracking-wider">{t(tagKey)}</span>
               ))}
             </div>
-            <p className="font-['Space_Mono'] text-[12px] leading-relaxed text-gray-600 max-w-sm md:text-right">
+            <p className="font-['Space_Mono'] text-[12px] leading-relaxed text-gray-600 max-w-sm md:max-w-md md:text-right whitespace-pre-line">
               {t(project.descKey)}
             </p>
           </div>

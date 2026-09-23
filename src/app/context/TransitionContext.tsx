@@ -15,15 +15,15 @@ interface TransitionContextType {
 
 const TransitionContext = createContext<TransitionContextType | undefined>(undefined);
 
-const STAR_COUNT = 14;
+const STAR_COUNT = 36;
 
 // Pre-computed, deterministic star params (angle / distance / size / delay)
 // so the burst looks organic without relying on Math.random() re-renders.
 const STARS = Array.from({ length: STAR_COUNT }, (_, i) => {
   const angle = (i / STAR_COUNT) * Math.PI * 2 + (i % 2 === 0 ? 0.18 : -0.24);
-  const distance = 38 + ((i * 53) % 42); // 38–80 vmax
-  const size = 14 + ((i * 17) % 5) * 6; // 14–34px
-  const delay = (i % 7) * 0.02;
+  const distance = 30 + ((i * 53) % 60); // 30–90 vmax, two loose "rings"
+  const size = 10 + ((i * 17) % 6) * 5; // 10–35px
+  const delay = (i % 11) * 0.015;
   const spin = i % 2 === 0 ? 1 : -1;
   return { angle, distance, size, delay, spin };
 });
