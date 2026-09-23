@@ -108,6 +108,19 @@ const translations = {
     proj6Title: 'COLLAGE WORK',        proj6Cat: 'Art Direction',              proj6Tag1: 'Art Direction',  proj6Tag2: 'Visual',
     proj7Title: 'BRAND SYSTEM',        proj7Cat: 'Brand / Identity',           proj7Tag1: 'Branding',       proj7Tag2: 'Identity',
 
+    viewProject: 'View project',
+    backToWork: 'Back to work',
+    prevProject: 'Prev',
+    nextProject: 'Next',
+
+    proj1Desc: 'A brand-strategy workshop turned into a live UI/UX generation tool — helping teams translate a rough idea into a coherent visual identity in a single session.',
+    proj2Desc: 'An editorial portrait series exploring light, texture, and expression — shot, directed, and retouched end to end for a personal photography study.',
+    proj3Desc: 'Product design for a web3 platform: mapping the core user flows, defining the component system, and shipping a clean, trustworthy interface from 0 to 1.',
+    proj4Desc: 'Campaign and social design for a community event — from key art to on-the-ground signage — built to travel across formats without losing its voice.',
+    proj5Desc: 'A motion-led experimental study: loose sketches turned into short animated pieces exploring rhythm, color, and unexpected transitions.',
+    proj6Desc: 'An art-direction collage project layering photography, texture, and type to build a visual language that feels handmade but intentional.',
+    proj7Desc: 'A full brand identity system — logo, type, color, and usage guidelines — designed to hold up across web, print, and social touchpoints.',
+
     // ── PLAY ─────────────────────────────────────────────────────
     playInstruction: 'drag & drop · hover to reveal title',
     photo1Title: 'WORKSHOP POSTER',
@@ -223,6 +236,19 @@ const translations = {
     proj5Title: 'EXPLORACIÓN CREATIVA', proj5Cat: 'Experimental / Motion',     proj5Tag1: 'Experimental',       proj5Tag2: 'Motion',
     proj6Title: 'COLLAGE',              proj6Cat: 'Dirección de Arte',         proj6Tag1: 'Dirección de Arte',  proj6Tag2: 'Visual',
     proj7Title: 'SISTEMA DE MARCA',     proj7Cat: 'Marca / Identidad',         proj7Tag1: 'Branding',           proj7Tag2: 'Identidad',
+
+    viewProject: 'Ver proyecto',
+    backToWork: 'Volver al trabajo',
+    prevProject: 'Anterior',
+    nextProject: 'Siguiente',
+
+    proj1Desc: 'Un taller de estrategia de marca convertido en una herramienta de generación de UI/UX en vivo — ayudando a equipos a traducir una idea vaga en una identidad visual coherente en una sola sesión.',
+    proj2Desc: 'Una serie de retratos editoriales explorando luz, textura y expresión — dirigida, fotografiada y retocada de principio a fin como estudio personal.',
+    proj3Desc: 'Diseño de producto para una plataforma web3: mapeo de los flujos clave, definición del sistema de componentes y lanzamiento de una interfaz limpia y confiable de 0 a 1.',
+    proj4Desc: 'Diseño de campaña y redes para un evento comunitario — desde la pieza clave hasta la señalización en el lugar — pensado para viajar entre formatos sin perder su voz.',
+    proj5Desc: 'Una exploración experimental basada en motion: bocetos sueltos convertidos en piezas animadas cortas que exploran ritmo, color y transiciones inesperadas.',
+    proj6Desc: 'Un proyecto de dirección de arte en collage que combina fotografía, textura y tipografía para construir un lenguaje visual artesanal pero intencional.',
+    proj7Desc: 'Un sistema de identidad de marca completo — logo, tipografía, color y lineamientos de uso — diseñado para sostenerse en web, impreso y redes sociales.',
 
     // ── PLAY ─────────────────────────────────────────────────────
     playInstruction: 'arrastra · hover para revelar título',
