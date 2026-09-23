@@ -17,7 +17,6 @@ const translations = {
 
     // ── FOOTER ───────────────────────────────────────────────────
     footerCopy: '© 2026 LIZETH RICO',
-    email: 'Email',
     linkedin: 'LinkedIn',
 
     // ── HOME ─────────────────────────────────────────────────────
@@ -25,10 +24,10 @@ const translations = {
     iAm: "i'm lizeth.",
     profileCaption: 'lizeth rico — designer',
 
-    role1Label: 'creative',
+    role1Label: 'Creative',
     role1Item1: 'Mixed media',
     role1Item2: 'Motion graphics',
-    role1Item3: 'ui/ux',
+    role1Item3: 'UX/UI',
 
     role2Label: 'product designer',
     role2Item1: 'prd writing, scoping, user research',
@@ -44,13 +43,13 @@ const translations = {
     role4Item2: '',
     role4Item3: '',
 
-    notableLabel: 'notable',
+    notableLabel: 'My pillars',
     stat1Value: 'DESIGN',
-    stat1Label: 'for connecting people',
+    stat1Label: 'to connect and communicate',
     stat2Value: 'ART',
-    stat2Label: 'through feelings',
+    stat2Label: 'to express my feelings',
     stat3Value: 'STEM',
-    stat3Label: 'technology to build',
+    stat3Label: 'to build',
 
     currentlyLabel: 'currently',
     current1: '⦿ studying Web3',
@@ -77,35 +76,14 @@ const translations = {
     clickToShuffle: 'click to shuffle',
 
     experienceLabel: '[ studies ]',
-    year2025: '2025',
-    title2025: 'UNIVERSITY / PROGRAM NAME', // ⬅️ fill in with your real school/program
-    exp2025_1: 'interning @ seek by sara blakely ventures (finance, operations, marketing)',
-    exp2025_2: 'studying UX/design — switched mains',
-    exp2025_3: 'product design @ polymarket (internal marketing tool contract)',
-    exp2025_4: 'started building an app for creators: Kairo',
-    year2324: '2023–24',
-    title2324: 'UNIVERSITY / PROGRAM NAME', // ⬅️ fill in with your real school/program
-    exp2324_1: 'built one-woman content studio — $250k in campaigns',
-    exp2324_2: 'ui/ux for web3 products & platforms',
-    exp2324_3: 'building in public w/ figma make',
-    year2122: '2021–22',
-    title2122: 'UNIVERSITY / PROGRAM NAME', // ⬅️ fill in with your real school/program
-    exp2122_1: 'led brand strategy for web3 platform (200k users)',
-    exp2122_2: 'designed campaigns w/ 3M+ impressions',
-    exp2122_3: 'co-led community & events production',
-
-    // Two new entries — replace the placeholder text below with real ones
-    yearNew1: 'YEAR',
-    titleNew1: 'UNIVERSITY / PROGRAM NAME',
-    expNew1_1: 'detail one',
-    expNew1_2: 'detail two',
-    yearNew2: 'YEAR',
-    titleNew2: 'UNIVERSITY / PROGRAM NAME',
-    expNew2_1: 'detail one',
-    expNew2_2: 'detail two',
+    year2025: '2023 – Present',
+    exp2025_1: 'Professional degree in Digital Design & Multimedia — Universidad Colegio Mayor de Cundinamarca',
+    year2324: '2024',
+    exp2324_1: 'Diploma in UX/UI Design — Universidad Nacional de Colombia',
+    year2122: '2022',
+    exp2122_1: 'Professional Technician in Data Processing — Universidad Kuepa',
 
     skillsLabel: '[ tools & skills ]',
-    contactEmail: 'EMAIL',
     contactResume: 'RESUME',
     contactLinkedin: 'LINKEDIN',
 
@@ -158,7 +136,6 @@ const translations = {
 
     // ── FOOTER ───────────────────────────────────────────────────
     footerCopy: '© 2026 LIZETH RICO',
-    email: 'Correo',
     linkedin: 'LinkedIn',
 
     // ── HOME ─────────────────────────────────────────────────────
@@ -166,10 +143,10 @@ const translations = {
     iAm: 'soy lizeth.',
     profileCaption: 'lizeth rico — diseñadora',
 
-    role1Label: 'creativa',
+    role1Label: 'Creativa',
     role1Item1: 'Multimedia',
     role1Item2: 'Motion graphics',
-    role1Item3: 'ui/ux',
+    role1Item3: 'Ux/Ui',
 
     role2Label: 'diseñadora de producto',
     role2Item1: 'prd, alcance, investigación de usuarios',
@@ -185,13 +162,13 @@ const translations = {
     role4Item2: '',
     role4Item3: '',
 
-    notableLabel: 'destacado',
+    notableLabel: 'Mis pilares',
     stat1Value: 'DISEÑO',
-    stat1Label: 'para conectar personas',
+    stat1Label: 'para conectar y comunicar',
     stat2Value: 'ARTE',
-    stat2Label: 'a través de sentimientos',
+    stat2Label: 'para mostrar mis sentimientos',
     stat3Value: 'STEM',
-    stat3Label: 'tecnología para construir',
+    stat3Label: 'para construir',
 
     currentlyLabel: 'actualmente',
     current1: '⦿ estudiando Web3',
@@ -218,35 +195,14 @@ const translations = {
     clickToShuffle: 'dale clic para chismosear',
 
     experienceLabel: '[ estudios ]',
-    year2025: '2025',
-    title2025: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA', // ⬅️ pon aquí tu colegio/universidad real
-    exp2025_1: 'pasantía @ seek by sara blakely ventures (finanzas, operaciones, marketing)',
-    exp2025_2: 'estudiando UX/diseño — cambié de énfasis',
-    exp2025_3: 'diseño de producto @ polymarket (contrato herramienta de marketing interno)',
-    exp2025_4: 'comencé a construir una app para creadores: Kairo',
-    year2324: '2023–24',
-    title2324: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA', // ⬅️ pon aquí tu colegio/universidad real
-    exp2324_1: 'construí estudio de contenido unipersonal — $250k en campañas',
-    exp2324_2: 'ui/ux para productos & plataformas web3',
-    exp2324_3: 'construyendo en público con figma make',
-    year2122: '2021–22',
-    title2122: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA', // ⬅️ pon aquí tu colegio/universidad real
-    exp2122_1: 'lideré estrategia de marca para plataforma web3 (200k usuarios)',
-    exp2122_2: 'diseñé campañas con +3M impresiones',
-    exp2122_3: 'co-lideré comunidad y producción de eventos',
-
-    // Dos entradas nuevas — reemplaza el texto de ejemplo por el real
-    yearNew1: 'AÑO',
-    titleNew1: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA',
-    expNew1_1: 'detalle uno',
-    expNew1_2: 'detalle dos',
-    yearNew2: 'AÑO',
-    titleNew2: 'NOMBRE DE LA UNIVERSIDAD / PROGRAMA',
-    expNew2_1: 'detalle uno',
-    expNew2_2: 'detalle dos',
+    year2025: '2023 - Actualmente',
+    exp2025_1: 'Carrera profesional en Diseño Digital y Multimedia - Universidad Colegio Mayor de Cundinamarca',
+    year2324: '2024',
+    exp2324_1: 'Diplomado en Diseño Ux-Ui - Universidad Nacional De Colombia',
+    year2122: '2022',
+    exp2122_1: 'Técnico Profesional en Procesamiento de Datos - Universidad Kuepa',
 
     skillsLabel: '[ herramientas & habilidades ]',
-    contactEmail: 'EMAIL',
     contactResume: 'CV',
     contactLinkedin: 'LINKEDIN',
 

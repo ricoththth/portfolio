@@ -102,11 +102,9 @@ export function About() {
           <div className="border-b border-gray-200 pb-3 mb-8">
             <h2 className="font-['Space_Mono'] text-[11px] uppercase tracking-[0.3em]">{t('experienceLabel')}</h2>
           </div>
-          <TimelineEntry year={t('year2025')} title={t('title2025')} items={[t('exp2025_1'), t('exp2025_2'), t('exp2025_3'), t('exp2025_4')]} delay={0} />
-          <TimelineEntry year={t('year2324')} title={t('title2324')} items={[t('exp2324_1'), t('exp2324_2'), t('exp2324_3')]} delay={0.1} />
-          <TimelineEntry year={t('year2122')} title={t('title2122')} items={[t('exp2122_1'), t('exp2122_2'), t('exp2122_3')]} delay={0.2} />
-          <TimelineEntry year={t('yearNew1')} title={t('titleNew1')} items={[t('expNew1_1'), t('expNew1_2')]} delay={0.3} />
-          <TimelineEntry year={t('yearNew2')} title={t('titleNew2')} items={[t('expNew2_1'), t('expNew2_2')]} delay={0.4} />
+          <TimelineEntry year={t('year2025')} items={[t('exp2025_1')]} delay={0} />
+          <TimelineEntry year={t('year2324')} items={[t('exp2324_1')]} delay={0.1} />
+          <TimelineEntry year={t('year2122')} items={[t('exp2122_1')]} delay={0.2} />
         </motion.div>
 
         {/* Skills */}
@@ -116,7 +114,7 @@ export function About() {
           </div>
           <div className="flex flex-wrap gap-2">
             {skills.map(skill => (
-              <motion.span key={skill} className="border border-gray-300 px-3 py-1 font-['Space_Mono'] text-[10px] uppercase tracking-wider text-gray-600 cursor-default" whileHover={{ backgroundColor: '#000', color: '#fff', borderColor: '#000' }} transition={{ duration: 0.15 }}>
+              <motion.span key={skill} className="rounded-full border border-gray-300 px-3 py-1 font-['Space_Mono'] text-[10px] uppercase tracking-wider text-gray-600 cursor-default" whileHover={{ backgroundColor: '#000', color: '#fff', borderColor: '#000' }} transition={{ duration: 0.15 }}>
                 {skill}
               </motion.span>
             ))}
@@ -127,7 +125,6 @@ export function About() {
         <motion.div className="border-t border-black pt-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
           <div className="flex flex-wrap gap-6 font-['Space_Mono'] text-[11px]">
             {[
-              { label: t('contactEmail'),    href: 'mailto:hello@lizethrico.com' },
               { label: t('contactResume'),   href: '#resume' },
               { label: t('contactLinkedin'), href: 'https://www.linkedin.com/in/lizeth-rico/' },
             ].map(({ label, href }) => (

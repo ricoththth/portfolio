@@ -136,12 +136,6 @@ export function Home() {
               </div>
             </div>
 
-            <div className="pt-2">
-              <a href="mailto:hello@lizethrico.com" className="group inline-flex items-center gap-1 text-[10px] text-gray-500 hover:text-black transition-colors duration-200">
-                <span className="underline underline-offset-2 group-hover:no-underline">hello@lizethrico.com</span>
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200">↗</span>
-              </a>
-            </div>
           </motion.div>
         </div>
 
