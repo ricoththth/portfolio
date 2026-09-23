@@ -65,6 +65,7 @@ import imgForjaHero from '../../assets/uploads/forja-hero-covid.png'; // hero de
 import imgForjaServicioCliente from '../../assets/uploads/forja-servicio-cliente.png'; // página "Servicio al cliente" (captura larga)
 import imgForjaHomepage from '../../assets/uploads/forja-homepage.webp'; // homepage completa rediseñada (captura muy larga)
 import imgForjaAntes from '../../assets/uploads/forja-antes.png'; // cómo se veía el sitio ANTES del rediseño
+import imgBetterCampusCover from '../../assets/uploads/bettercampus-cover.webp'; // portada / logo de BetterCampus
 
 // ───────────────────────────────────────────────────────────────────
 // HOME — página de inicio
@@ -105,7 +106,7 @@ export const WORK_IMAGES = {
   proj2: { cover: fotoRetratoAbrazo,     gallery: [fotoRetratoAbrazo,     fotoPendiente,          fotoPendiente,        fotoTallerAbrazo] },
   proj3: { cover: imgMoodyLogo,          gallery: [imgMoodyLogo,          imgMoodyResearch,      imgMoodyUsuarios,     imgMoodyStorytelling] }, // MOODY — completo, las 3 salen anchas (ver wideSlots en projects.ts)
   proj4: { cover: imgForjaHero,          gallery: [imgForjaHero,          imgForjaAntes,          imgForjaServicioCliente, imgForjaHomepage] }, // FORJA — ver sideBySide en projects.ts
-  proj5: { cover: fotoDesfilePasarela,   gallery: [fotoDesfilePasarela,   fotoCollageMoodboard,  fotoPendiente,        fotoPendiente] },
+  proj5: { cover: imgBetterCampusCover,  gallery: [imgBetterCampusCover,  fotoPendiente,          fotoPendiente,        fotoPendiente] }, // BETTER CAMPUS — foto real, faltan más
   proj6: { cover: fotoCollageHalloween,  gallery: [fotoCollageHalloween,  fotoPendiente,          fotoPendiente,        fotoPendiente] },
   proj7: { cover: fotoTexturaRosa,       gallery: [fotoTexturaRosa,       fotoPendiente,          fotoCollageMoodboard,fotoPendiente] },
   // ícono que aparece encima de la portada al pasar el mouse (solo en Work)

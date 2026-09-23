@@ -88,7 +88,7 @@ const translations = {
     proj2Title: 'PORTRAIT SERIES',     proj2Cat: 'Photography / Editorial',    proj2Tag1: 'Photography',    proj2Tag2: 'Editorial',
     proj3Title: 'MOODY',               proj3Cat: 'App / Emotional Wellness',   proj3Tag1: 'UX/UI',          proj3Tag2: 'Research',      proj3Tag3: 'Branding',
     proj4Title: 'FORJA',               proj4Cat: 'Web Redesign',              proj4Tag1: 'UX/UI',          proj4Tag2: 'Research',      proj4Tag3: 'Redesign',
-    proj5Title: 'CREATIVE EXPLORATION',proj5Cat: 'Experimental / Motion',      proj5Tag1: 'Experimental',   proj5Tag2: 'Motion',
+    proj5Title: 'BETTER CAMPUS',       proj5Cat: 'UX Research',                proj5Tag1: 'UX/UI',          proj5Tag2: 'Research',      proj5Tag3: 'Heuristic Analysis',
     proj6Title: 'COLLAGE WORK',        proj6Cat: 'Art Direction',              proj6Tag1: 'Art Direction',  proj6Tag2: 'Visual',
     proj7Title: 'BRAND SYSTEM',        proj7Cat: 'Brand / Identity',           proj7Tag1: 'Branding',       proj7Tag2: 'Identity',
 
@@ -105,7 +105,7 @@ const translations = {
     proj3ExternalButton: 'Click here',
     proj4Desc: 'Forja was another diploma project — a full redesign that started with a heuristic evaluation of the existing site and carried through to a high-fidelity prototype.',
     proj4SideText: "The heuristic evaluation surfaced several visual and navigation inconsistencies — each page felt like it belonged to a different site. On the Customer Service page, I unified the visual hierarchy, simplified the FAQ accordion, and aligned the color palette with the rest of the site so the experience reads as one coherent brand from start to finish.",
-    proj5Desc: 'A motion-led experimental study: loose sketches turned into short animated pieces exploring rhythm, color, and unexpected transitions.',
+    proj5Desc: "Better Campus was a heuristic analysis I did as part of a research group (Semillero) at Universidad Nacional (DIN'T). It's a student-to-student platform that helps you build your class schedule and connects with UNAL's academic system (SIA).",
     proj6Desc: 'An art-direction collage project layering photography, texture, and type to build a visual language that feels handmade but intentional.',
     proj7Desc: 'A full brand identity system — logo, type, color, and usage guidelines — designed to hold up across web, print, and social touchpoints.',
 
@@ -205,7 +205,7 @@ const translations = {
     proj2Title: 'SERIE DE RETRATOS',    proj2Cat: 'Fotografía / Editorial',    proj2Tag1: 'Fotografía',         proj2Tag2: 'Editorial',
     proj3Title: 'MOODY',                 proj3Cat: 'App / Bienestar Emocional', proj3Tag1: 'UX/UI',              proj3Tag2: 'Research',      proj3Tag3: 'Marca',
     proj4Title: 'FORJA',                 proj4Cat: 'Rediseño Web',              proj4Tag1: 'UX/UI',              proj4Tag2: 'Research',      proj4Tag3: 'Rediseño',
-    proj5Title: 'EXPLORACIÓN CREATIVA', proj5Cat: 'Experimental / Motion',     proj5Tag1: 'Experimental',       proj5Tag2: 'Motion',
+    proj5Title: 'BETTER CAMPUS',         proj5Cat: 'Investigación UX',          proj5Tag1: 'UX/UI',              proj5Tag2: 'Research',      proj5Tag3: 'Análisis Heurístico',
     proj6Title: 'COLLAGE',              proj6Cat: 'Dirección de Arte',         proj6Tag1: 'Dirección de Arte',  proj6Tag2: 'Visual',
     proj7Title: 'SISTEMA DE MARCA',     proj7Cat: 'Marca / Identidad',         proj7Tag1: 'Branding',           proj7Tag2: 'Identidad',
 
@@ -222,7 +222,7 @@ const translations = {
     proj3ExternalButton: 'Click aquí',
     proj4Desc: 'Forja fue otro proyecto del diplomado: un rediseño completo que arrancó con una evaluación heurística del sitio existente y llegó hasta el desarrollo de un prototipo de alta fidelidad.',
     proj4SideText: 'La evaluación heurística reveló varias inconsistencias visuales y de navegación entre secciones — cada página parecía pertenecer a un sitio distinto. En "Servicio al Cliente" unifiqué la jerarquía visual, simplifiqué el acordeón de preguntas frecuentes y alineé la paleta de color con el resto del sitio, para que la experiencia se sintiera como una sola marca coherente de principio a fin.',
-    proj5Desc: 'Una exploración experimental basada en motion: bocetos sueltos convertidos en piezas animadas cortas que exploran ritmo, color y transiciones inesperadas.',
+    proj5Desc: "Better Campus fue un análisis heurístico realizado en el Semillero de la Universidad Nacional (DIN'T). Es una plataforma de estudiantes para estudiantes que brinda apoyo para armar el horario de clases y se vincula con el SIA de la UNAL.",
     proj6Desc: 'Un proyecto de dirección de arte en collage que combina fotografía, textura y tipografía para construir un lenguaje visual artesanal pero intencional.',
     proj7Desc: 'Un sistema de identidad de marca completo — logo, tipografía, color y lineamientos de uso — diseñado para sostenerse en web, impreso y redes sociales.',
 

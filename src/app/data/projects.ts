@@ -90,14 +90,14 @@ export const projects: ProjectData[] = [
   },
   {
     id: 5,
-    slug: 'creative-exploration',
+    slug: 'bettercampus',
     cover: WORK_IMAGES.proj5.cover,
     gallery: WORK_IMAGES.proj5.gallery,
     year: '2023',
     titleKey: 'proj5Title',
     catKey: 'proj5Cat',
     descKey: 'proj5Desc',
-    tagKeys: ['proj5Tag1', 'proj5Tag2'],
+    tagKeys: ['proj5Tag1', 'proj5Tag2', 'proj5Tag3'],
   },
   {
     id: 6,
