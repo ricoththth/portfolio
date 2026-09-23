@@ -14,6 +14,12 @@ export interface ProjectData {
    *  panel showing this copy instead — for projects that need more
    *  room to explain than a caption allows. */
   extraTextKey?: string;
+  /** Optional: shows a "want to read more / try it?" prompt + round
+   *  button below the gallery, linking out (e.g. to a Behance case
+   *  study). All three must be set together. */
+  externalUrl?: string;
+  externalPromptKey?: string;
+  externalButtonKey?: string;
 }
 
 // Central source of truth for every case study — used by the Work grid
@@ -31,6 +37,9 @@ export const projects: ProjectData[] = [
     catKey: 'proj3Cat',
     descKey: 'proj3Desc',
     tagKeys: ['proj3Tag1', 'proj3Tag2', 'proj3Tag3'],
+    externalUrl: 'https://www.behance.net/gallery/175823079/Moody-Ux-Research?tracking_source=search_projects|ricoththth&l=1',
+    externalPromptKey: 'proj3ExternalPrompt',
+    externalButtonKey: 'proj3ExternalButton',
   },
   {
     id: 1,

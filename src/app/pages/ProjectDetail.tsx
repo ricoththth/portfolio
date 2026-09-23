@@ -49,39 +49,42 @@ export function ProjectDetail() {
         </motion.button>
 
         {/* ── Hero ────────────────────────────────────────────────── */}
-        <motion.div custom={0} variants={fadeUp} initial="hidden" animate="show" className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10 border-b border-black pb-8">
-          <div>
-            <div className="flex items-center gap-2 mb-3 text-gray-400">
-              <Star size={12} fill="currentColor" strokeWidth={0} />
-              <span className="font-['Space_Mono'] text-[10px] uppercase tracking-widest">{t(project.catKey)}</span>
-            </div>
-            <h1 className="font-['Space_Mono'] uppercase tracking-tight text-3xl md:text-4xl">{t(project.titleKey)}</h1>
+        {/* Cover photo sits small, next to the description — no big
+            full-width hero image. */}
+        <motion.div custom={0} variants={fadeUp} initial="hidden" animate="show" className="mb-10 border-b border-black pb-8">
+          <div className="flex items-center gap-2 mb-3 text-gray-400">
+            <Star size={12} fill="currentColor" strokeWidth={0} />
+            <span className="font-['Space_Mono'] text-[10px] uppercase tracking-widest">{t(project.catKey)}</span>
           </div>
+          <h1 className="font-['Space_Mono'] uppercase tracking-tight text-3xl md:text-4xl mb-6">{t(project.titleKey)}</h1>
 
-          <div className="flex flex-col items-start md:items-end gap-3 shrink-0">
-            <div className="flex gap-2 flex-wrap md:justify-end">
-              {project.tagKeys.map((tagKey) => (
-                <span key={tagKey} className="rounded-full border border-black px-3 py-1 font-['Space_Mono'] text-[10px] uppercase tracking-wider">{t(tagKey)}</span>
-              ))}
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="w-full md:w-[220px] shrink-0 overflow-hidden bg-gray-100 aspect-[4/3]">
+              <img src={project.cover} alt={t(project.titleKey)} className="w-full h-full object-cover" />
             </div>
-            <p className="font-['Space_Mono'] text-[12px] leading-relaxed text-gray-600 max-w-sm md:max-w-md md:text-right whitespace-pre-line">
-              {t(project.descKey)}
-            </p>
+            <div className="flex-1 flex flex-col gap-3">
+              <div className="flex gap-2 flex-wrap">
+                {project.tagKeys.map((tagKey) => (
+                  <span key={tagKey} className="rounded-full border border-black px-3 py-1 font-['Space_Mono'] text-[10px] uppercase tracking-wider">{t(tagKey)}</span>
+                ))}
+              </div>
+              <p className="font-['Space_Mono'] text-[12px] leading-relaxed text-gray-600 whitespace-pre-line">
+                {t(project.descKey)}
+              </p>
+            </div>
           </div>
-        </motion.div>
-
-        {/* ── Cover ───────────────────────────────────────────────── */}
-        <motion.div custom={1} variants={fadeUp} initial="hidden" animate="show" className="overflow-hidden bg-gray-100 mb-6 aspect-[16/9]">
-          <img src={project.cover} alt={t(project.titleKey)} className="w-full h-full object-cover" />
         </motion.div>
 
         {/* ── Gallery ─────────────────────────────────────────────── */}
         {/* When a project has extraTextKey, its last photo slot becomes a
             text panel instead — for case studies that need more room to
-            explain than a caption allows. */}
+            explain than a caption allows. The first slot renders wide and
+            uses object-contain (not cover) so dense screenshots/infographics
+            don't get cropped. */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16">
           {project.gallery.slice(1).map((img, i, arr) => {
             const isTextSlot = !!project.extraTextKey && i === arr.length - 1;
+            const isWide = i === 0;
             return (
               <motion.div
                 key={i}
@@ -89,19 +92,42 @@ export function ProjectDetail() {
                 variants={fadeUp}
                 initial="hidden"
                 animate="show"
-                className={`overflow-hidden aspect-[4/3] ${i === 0 ? 'md:col-span-2 md:aspect-[16/8]' : ''} ${isTextSlot ? 'border border-black p-6 md:p-8 flex items-center' : 'bg-gray-100'}`}
+                className={`overflow-hidden ${isWide ? 'md:col-span-2 aspect-[16/10]' : 'aspect-[4/3]'} ${isTextSlot ? 'border border-black p-6 md:p-8 flex items-center' : 'bg-gray-100'}`}
               >
                 {isTextSlot ? (
                   <p className="font-['Space_Mono'] text-[11px] leading-relaxed text-gray-700 whitespace-pre-line">
                     {t(project.extraTextKey!)}
                   </p>
                 ) : (
-                  <img src={img} alt={`${t(project.titleKey)} ${i + 2}`} className="w-full h-full object-cover" loading="lazy" decoding="async" />
+                  <img src={img} alt={`${t(project.titleKey)} ${i + 2}`} className={`w-full h-full ${isWide ? 'object-contain' : 'object-cover'}`} loading="lazy" decoding="async" />
                 )}
               </motion.div>
             );
           })}
         </div>
+
+        {/* ── CTA externa (opcional, ej. case study en Behance) ─────── */}
+        {project.externalUrl && (
+          <motion.div
+            className="flex flex-col items-center gap-5 mb-16 text-center"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="font-['Space_Mono'] uppercase tracking-tight text-2xl md:text-3xl">
+              {t(project.externalPromptKey!)}
+            </h2>
+            <a
+              href={project.externalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-black px-8 py-3 font-['Space_Mono'] text-[11px] uppercase tracking-widest transition-colors duration-200 hover:bg-black hover:text-white"
+            >
+              {t(project.externalButtonKey!)}
+            </a>
+          </motion.div>
+        )}
 
         {/* ── Prev / Next ─────────────────────────────────────────── */}
         <div className="grid grid-cols-2 border-t border-black">
