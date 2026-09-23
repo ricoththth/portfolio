@@ -105,6 +105,7 @@ export function About() {
           <TimelineEntry year={t('year2025')} items={[t('exp2025_1')]} delay={0} />
           <TimelineEntry year={t('year2324')} items={[t('exp2324_1')]} delay={0.1} />
           <TimelineEntry year={t('year2122')} items={[t('exp2122_1')]} delay={0.2} />
+          <TimelineEntry year={t('yearCourse')} items={[t('expCourse_1')]} delay={0.3} />
         </motion.div>
 
         {/* Skills */}

@@ -59,7 +59,6 @@ export function Home() {
     { num: '[01]', label: t('role1Label'), items: [t('role1Item1'), t('role1Item2'), t('role1Item3')] },
     { num: '[02]', label: t('role2Label'), items: [t('role2Item1'), t('role2Item2')] },
     { num: '[03]', label: t('role3Label'), items: [t('role3Item1'), t('role3Item2'), t('role3Item3')] },
-    { num: '[04]', label: t('role4Label'), items: [t('role4Item1'), t('role4Item2'), t('role4Item3')] },
   ];
 
   const stats = [

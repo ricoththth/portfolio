@@ -27,7 +27,7 @@ const translations = {
     role1Label: 'Creative',
     role1Item1: 'Mixed media',
     role1Item2: 'Motion graphics',
-    role1Item3: 'UX/UI',
+    role1Item3: 'ux/ui',
 
     role2Label: 'product designer',
     role2Item1: 'prd writing, scoping, user research',
@@ -38,18 +38,14 @@ const translations = {
     role3Item2: 'vibe code',
     role3Item3: 'interdisciplinary experimentation',
 
-    role4Label: '',
-    role4Item1: '',
-    role4Item2: '',
-    role4Item3: '',
 
-    notableLabel: 'My pillars',
+    notableLabel: 'notable',
     stat1Value: 'DESIGN',
-    stat1Label: 'to connect and communicate',
+    stat1Label: 'for connecting people',
     stat2Value: 'ART',
-    stat2Label: 'to express my feelings',
+    stat2Label: 'through feelings',
     stat3Value: 'STEM',
-    stat3Label: 'to build',
+    stat3Label: 'technology to build',
 
     currentlyLabel: 'currently',
     current1: '⦿ studying Web3',
@@ -61,7 +57,7 @@ const translations = {
     // ── ABOUT ────────────────────────────────────────────────────
     aboutLabel: 'about',
     myStory: 'MY STORY',
-    bio1: "hi! i'm lizeth, i'm a creative. i like working at the intersection of brand, product, and people.",
+    bio1: "hi! i'm lizeth, i'm a creative person. i like working at the intersection of brand, product, and people.",
     bio2: 'i believe that deeply understanding human needs is what makes anything worth building — whether through visual media, technology, or community. my mission is to inspire people to explore, create, & live boldly.',
     bio3: 'outside work, i love working out, running, traveling, and screen printing ●',
     bio4: "here's a bit of my life :)",
@@ -82,6 +78,8 @@ const translations = {
     exp2324_1: 'Diploma in UX/UI Design — Universidad Nacional de Colombia',
     year2122: '2022',
     exp2122_1: 'Professional Technician in Data Processing — Universidad Kuepa',
+    yearCourse: '2025',
+    expCourse_1: 'UX/UI Course — Pieri Studio',
 
     skillsLabel: '[ tools & skills ]',
     contactResume: 'RESUME',
@@ -112,7 +110,7 @@ const translations = {
     proj7Desc: 'A full brand identity system — logo, type, color, and usage guidelines — designed to hold up across web, print, and social touchpoints.',
 
     // ── PLAY ─────────────────────────────────────────────────────
-    playInstruction: 'drag & drop · hover to reveal title',
+    playInstruction: 'drag some of my work <3',
     photo1Title: 'WORKSHOP POSTER',
     photo2Title: 'DIGITAL RETOUCH',
     photo3Title: 'PHOTO',
@@ -157,10 +155,6 @@ const translations = {
     role3Item2: 'vibe code',
     role3Item3: 'experimentación interdisciplinaria',
 
-    role4Label: '',
-    role4Item1: '',
-    role4Item2: '',
-    role4Item3: '',
 
     notableLabel: 'Mis pilares',
     stat1Value: 'DISEÑO',
@@ -180,7 +174,7 @@ const translations = {
     // ── ABOUT ────────────────────────────────────────────────────
     aboutLabel: 'sobre mí',
     myStory: 'MI HISTORIA',
-    bio1: '¡hola! soy lizeth soy una creativa. Me gusta trabajar en la intersección de marca, producto y personas.',
+    bio1: '¡hola! soy lizeth soy una persona creativa. Me gusta trabajar en la intersección de marca, producto y personas.',
     bio2: 'Me gusta comprender profundamente las necesidades humanas es lo que hace que algo valga la pena construir ya sea desde medios visuales, tecnología o comunidad. mi misión es inspirar a las personas a explorar, crear y vivir con valentía.',
     bio3: 'fuera del trabajo, me encanta el ejercicio, correr, viajar y hacer serigrafia ●',
     bio4: 'aquí un poco de mi vida :)',
@@ -201,6 +195,8 @@ const translations = {
     exp2324_1: 'Diplomado en Diseño Ux-Ui - Universidad Nacional De Colombia',
     year2122: '2022',
     exp2122_1: 'Técnico Profesional en Procesamiento de Datos - Universidad Kuepa',
+    yearCourse: '2025',
+    expCourse_1: 'Curso Ux / Ui - Pieri Studio',
 
     skillsLabel: '[ herramientas & habilidades ]',
     contactResume: 'CV',
@@ -231,19 +227,13 @@ const translations = {
     proj7Desc: 'Un sistema de identidad de marca completo — logo, tipografía, color y lineamientos de uso — diseñado para sostenerse en web, impreso y redes sociales.',
 
     // ── PLAY ─────────────────────────────────────────────────────
-    playInstruction: 'arrastra · hover para revelar título',
+    playInstruction: 'arrastra algunos de mis trabajos <3',
     photo1Title: 'PÓSTER TALLER',
     photo2Title: 'RETOQUE DIGITAL',
     photo3Title: 'FOTOGRAFÍA',
     photo4Title: 'EVENTO FOTOGRÁFICO',
     photo5Title: 'COMUNIDAD FOTOGRÁFICA',
     photo6Title: 'COLOR · REDES SOCIALES',
-    playCap1: 'galápagos, 2024',
-    playCap2: 'retrato, 2023',
-    playCap3: 'taller, 2024',
-    playCap4: 'comunidad, 2022',
-    playCap5: 'creativa, 2023',
-    playCap6: 'collage, 2024',
   },
 };
 
