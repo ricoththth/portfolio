@@ -23,7 +23,6 @@ import fotoDesfileTrio from '../../imports/Desktop3/d6b83829ec4f021a428062642136
 import fotoDesfilePasarela from '../../imports/Desktop3/fe29603c489dcec5e917b0a270f2ae2dfdccf164.png'; // 3 personas bailando en tarima, luces turquesa
 import fotoPosterTaller from '../../imports/Desktop3/70c0b3d97ab60923b919b1ee9b1c90b3b09b45be.png'; // póster "Taller Genérame Esta"
 import fotoCollageHalloween from '../../imports/Desktop3/12777d0292107c4af8e01b8dacef28afb348c064.png'; // collage de fotos del taller (máscaras, Pac-Man)
-import fotoTexturaRosa from '../../imports/Desktop3/df869e1615c57ee0774db69b610db62ce72c7873.png'; // textura rosa (mesa de corte), abstracta
 
 // Las 4 fotos "about-p*" son EXCLUSIVAS del slider de About — no se
 // reutilizan en ningún otro lado del sitio (Work, Play, etc.)
@@ -32,10 +31,10 @@ import fotoCafe from '../../imports/Desktop3/about-p2.png'; // tomando café, vi
 import fotoOnSet from '../../imports/Desktop3/about-p4.png'; // con cámara Canon, "en set"
 import fotoTiendaSelfie from '../../imports/Desktop3/about-p5.png'; // selfie en espejo dentro de una tienda
 
-import fotoCollageMoodboard from '../../imports/image-3.png'; // moodboard propio sobre la mesa de corte rosa
-// fotoProductoUI (image-1.png, capturas de Polymarket/Koino) quedó sin
-// usar al reemplazar MAKERSVILLE por MOODY — sigue disponible en
-// src/imports/image-1.png si la quieres para otro proyecto.
+// fotoCollageMoodboard (image-3.png) y fotoProductoUI (image-1.png)
+// quedaron sin usar al borrar los proyectos placeholder (Genrame Idea,
+// Portrait Series, Collage Work, Brand System) — siguen disponibles en
+// src/imports/ si las quieres para un proyecto nuevo.
 
 import fotoTableroPlay from '../../imports/image-4.png'; // corcho de fondo para el tablero de "Play"
 
@@ -102,13 +101,9 @@ export const ABOUT_DECK = [
 // (usado por src/app/data/projects.ts — no lo edites ahí, edítalo aquí)
 // ───────────────────────────────────────────────────────────────────
 export const WORK_IMAGES = {
-  proj1: { cover: fotoTallerAbrazo,      gallery: [fotoTallerAbrazo,      fotoPosterTaller,      fotoPendiente,        fotoCollageMoodboard] },
-  proj2: { cover: fotoRetratoAbrazo,     gallery: [fotoRetratoAbrazo,     fotoPendiente,          fotoPendiente,        fotoTallerAbrazo] },
   proj3: { cover: imgMoodyLogo,          gallery: [imgMoodyLogo,          imgMoodyResearch,      imgMoodyUsuarios,     imgMoodyStorytelling] }, // MOODY — completo, las 3 salen anchas (ver wideSlots en projects.ts)
-  proj4: { cover: imgForjaHero,          gallery: [imgForjaHero,          imgForjaAntes,          imgForjaServicioCliente, imgForjaHomepage] }, // FORJA — ver sideBySide en projects.ts
+  proj4: { cover: imgForjaHero,          gallery: [imgForjaHero,          imgForjaAntes,          imgForjaServicioCliente, imgForjaHomepage] }, // FORJA — ver stackedColumns en projects.ts
   proj5: { cover: imgBetterCampusCover,  gallery: [imgBetterCampusCover,  fotoPendiente,          fotoPendiente,        fotoPendiente] }, // BETTER CAMPUS — foto real, faltan más
-  proj6: { cover: fotoCollageHalloween,  gallery: [fotoCollageHalloween,  fotoPendiente,          fotoPendiente,        fotoPendiente] },
-  proj7: { cover: fotoTexturaRosa,       gallery: [fotoTexturaRosa,       fotoPendiente,          fotoCollageMoodboard,fotoPendiente] },
   // ícono que aparece encima de la portada al pasar el mouse (solo en Work)
   hoverIcon: svgHoverProjects,
 };

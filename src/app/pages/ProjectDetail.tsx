@@ -78,52 +78,48 @@ export function ProjectDetail() {
         {/* ── Gallery ─────────────────────────────────────────────── */}
         {/* When a project has extraTextKey, its last photo slot becomes a
             text panel instead — for case studies that need more room to
-            explain than a caption allows. The wideSlots renders full-width
-            with object-contain (not cover) so dense screenshots/infographics
-            don't get cropped. sideBySide renders two tall screenshots next
-            to each other at their natural height, with a text panel under
-            the shorter one to balance the pair. */}
+            explain than a caption allows. wideSlots renders full-width with
+            object-contain (not cover) so dense screenshots/infographics
+            don't get cropped. stackedColumns renders a custom two-column
+            block (each column a stack of images/text at natural height)
+            in place of the slots it consumes — for screenshots of very
+            different lengths that need a text panel to balance them out. */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-16">
           {project.gallery.slice(1).map((img, i, arr) => {
             const isTextSlot = !!project.extraTextKey && i === arr.length - 1;
             const isWide = (project.wideSlots ?? [0]).includes(i);
-            const sbs = project.sideBySide;
+            const sc = project.stackedColumns;
 
-            if (sbs && i === sbs.indices[1]) return null; // rendered together with indices[0] below
-
-            if (sbs && i === sbs.indices[0]) {
-              const imgShort = sbs.shortIndex === 0 ? arr[sbs.indices[0]] : arr[sbs.indices[1]];
-              const imgTall = sbs.shortIndex === 0 ? arr[sbs.indices[1]] : arr[sbs.indices[0]];
-              const shortCol = (
-                <div className="flex flex-col gap-4">
-                  <div className="overflow-hidden bg-gray-100">
-                    <img src={imgShort} alt={`${t(project.titleKey)} ${sbs.indices[0] + 2}`} className="w-full h-auto block" loading="lazy" decoding="async" />
-                  </div>
-                  <div className="border border-black p-6 flex-1 flex items-center">
-                    <p className="font-['Space_Mono'] text-[11px] leading-relaxed text-gray-700 whitespace-pre-line">
-                      {t(sbs.textKey)}
-                    </p>
-                  </div>
-                </div>
-              );
-              const tallCol = (
-                <div className="overflow-hidden bg-gray-100">
-                  <img src={imgTall} alt={`${t(project.titleKey)} ${sbs.indices[1] + 2}`} className="w-full h-auto block" loading="lazy" decoding="async" />
-                </div>
-              );
-              return (
-                <motion.div
-                  key={i}
-                  custom={i + 2}
-                  variants={fadeUp}
-                  initial="hidden"
-                  animate="show"
-                  className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start"
-                >
-                  {sbs.shortIndex === 0 ? shortCol : tallCol}
-                  {sbs.shortIndex === 0 ? tallCol : shortCol}
-                </motion.div>
-              );
+            if (sc) {
+              const consumed = [...sc.left, ...sc.right].filter((v): v is number => v !== 'text');
+              if (consumed.includes(i)) {
+                if (i !== Math.min(...consumed)) return null; // whole block rendered once, at the first consumed index
+                const renderItem = (item: number | 'text', key: string) =>
+                  item === 'text' ? (
+                    <div key={key} className="border border-black p-6 flex items-center">
+                      <p className="font-['Space_Mono'] text-[11px] leading-relaxed text-gray-700 whitespace-pre-line">
+                        {t(sc.textKey!)}
+                      </p>
+                    </div>
+                  ) : (
+                    <div key={key} className="overflow-hidden bg-gray-100">
+                      <img src={arr[item]} alt={`${t(project.titleKey)} ${item + 2}`} className="w-full h-auto block" loading="lazy" decoding="async" />
+                    </div>
+                  );
+                return (
+                  <motion.div
+                    key={i}
+                    custom={i + 2}
+                    variants={fadeUp}
+                    initial="hidden"
+                    animate="show"
+                    className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start"
+                  >
+                    <div className="flex flex-col gap-4">{sc.left.map((item, idx) => renderItem(item, `l${idx}`))}</div>
+                    <div className="flex flex-col gap-4">{sc.right.map((item, idx) => renderItem(item, `r${idx}`))}</div>
+                  </motion.div>
+                );
+              }
             }
 
             return (

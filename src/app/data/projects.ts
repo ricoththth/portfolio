@@ -19,12 +19,13 @@ export interface ProjectData {
    *  for dense screenshots/infographics that shouldn't get cropped.
    *  Defaults to [0] (just the first slot) when not set. */
   wideSlots?: number[];
-  /** Optional: two gallery slots (indices within gallery.slice(1)) that
-   *  render side by side at their natural height instead of in the
-   *  normal grid — for two tall screenshots of different lengths. A
-   *  text panel goes under whichever one is shorter, to balance the
-   *  pair visually. */
-  sideBySide?: { indices: [number, number]; shortIndex: 0 | 1; textKey: string };
+  /** Optional: a custom two-column block that replaces the normal grid
+   *  for a run of gallery slots — each column is a stack of items
+   *  rendered top to bottom at natural height (no cropping). An item
+   *  is either a gallery index (within gallery.slice(1)) or the
+   *  literal 'text', which renders textKey in a bordered panel. Used
+   *  to balance two screenshots of very different lengths. */
+  stackedColumns?: { left: (number | 'text')[]; right: (number | 'text')[]; textKey?: string };
   /** Optional: shows a "want to read more / try it?" prompt + round
    *  button below the gallery, linking out (e.g. to a Behance case
    *  study). All three must be set together. */
@@ -54,29 +55,6 @@ export const projects: ProjectData[] = [
     externalButtonKey: 'proj3ExternalButton',
   },
   {
-    id: 1,
-    slug: 'genrame-idea',
-    cover: WORK_IMAGES.proj1.cover,
-    gallery: WORK_IMAGES.proj1.gallery,
-    year: '2024',
-    titleKey: 'proj1Title',
-    catKey: 'proj1Cat',
-    descKey: 'proj1Desc',
-    tagKeys: ['proj1Tag1', 'proj1Tag2'],
-    extraTextKey: 'proj1ExtraText',
-  },
-  {
-    id: 2,
-    slug: 'portrait-series',
-    cover: WORK_IMAGES.proj2.cover,
-    gallery: WORK_IMAGES.proj2.gallery,
-    year: '2023',
-    titleKey: 'proj2Title',
-    catKey: 'proj2Cat',
-    descKey: 'proj2Desc',
-    tagKeys: ['proj2Tag1', 'proj2Tag2'],
-  },
-  {
     id: 4,
     slug: 'forja',
     cover: WORK_IMAGES.proj4.cover,
@@ -86,7 +64,10 @@ export const projects: ProjectData[] = [
     catKey: 'proj4Cat',
     descKey: 'proj4Desc',
     tagKeys: ['proj4Tag1', 'proj4Tag2', 'proj4Tag3'],
-    sideBySide: { indices: [1, 2], shortIndex: 0, textKey: 'proj4SideText' },
+    // gallery.slice(1) = [antes (0, cuadrada), servicioCliente (1), homepage (2)]
+    // Columna izquierda: cuadrada → texto → servicio al cliente (apiladas)
+    // Columna derecha: homepage sola (la más larga)
+    stackedColumns: { left: [0, 'text', 1], right: [2], textKey: 'proj4SideText' },
   },
   {
     id: 5,
@@ -98,28 +79,6 @@ export const projects: ProjectData[] = [
     catKey: 'proj5Cat',
     descKey: 'proj5Desc',
     tagKeys: ['proj5Tag1', 'proj5Tag2', 'proj5Tag3'],
-  },
-  {
-    id: 6,
-    slug: 'collage-work',
-    cover: WORK_IMAGES.proj6.cover,
-    gallery: WORK_IMAGES.proj6.gallery,
-    year: '2024',
-    titleKey: 'proj6Title',
-    catKey: 'proj6Cat',
-    descKey: 'proj6Desc',
-    tagKeys: ['proj6Tag1', 'proj6Tag2'],
-  },
-  {
-    id: 7,
-    slug: 'brand-system',
-    cover: WORK_IMAGES.proj7.cover,
-    gallery: WORK_IMAGES.proj7.gallery,
-    year: '2023',
-    titleKey: 'proj7Title',
-    catKey: 'proj7Cat',
-    descKey: 'proj7Desc',
-    tagKeys: ['proj7Tag1', 'proj7Tag2'],
   },
 ];
 

@@ -84,30 +84,21 @@ const translations = {
 
     // ── WORK ─────────────────────────────────────────────────────
     workTitle: 'Work',
-    proj1Title: 'GENERAME IDEA',       proj1Cat: 'Workshop / Brand',           proj1Tag1: 'UI/UX',          proj1Tag2: 'Brand Strategy',
-    proj2Title: 'PORTRAIT SERIES',     proj2Cat: 'Photography / Editorial',    proj2Tag1: 'Photography',    proj2Tag2: 'Editorial',
     proj3Title: 'MOODY',               proj3Cat: 'App / Emotional Wellness',   proj3Tag1: 'UX/UI',          proj3Tag2: 'Research',      proj3Tag3: 'Branding',
     proj4Title: 'FORJA',               proj4Cat: 'Web Redesign',              proj4Tag1: 'UX/UI',          proj4Tag2: 'Research',      proj4Tag3: 'Redesign',
     proj5Title: 'BETTER CAMPUS',       proj5Cat: 'UX Research',                proj5Tag1: 'UX/UI',          proj5Tag2: 'Research',      proj5Tag3: 'Heuristic Analysis',
-    proj6Title: 'COLLAGE WORK',        proj6Cat: 'Art Direction',              proj6Tag1: 'Art Direction',  proj6Tag2: 'Visual',
-    proj7Title: 'BRAND SYSTEM',        proj7Cat: 'Brand / Identity',           proj7Tag1: 'Branding',       proj7Tag2: 'Identity',
 
     viewProject: 'View project',
     backToWork: 'Back to work',
     prevProject: 'Prev',
     nextProject: 'Next',
 
-    proj1Desc: "GENERAME IDEA started as a two-day brand-strategy workshop and grew into a live UI/UX generation tool. Teams would arrive with nothing but a rough idea — a name, a feeling, a scribbled sketch — and leave with a coherent visual identity: a moodboard, a type pairing, a color system, and a first pass at a UI, all decided and prototyped in the same session.\n\nMy role covered the full arc: designing the workshop structure and facilitation prompts, building the rapid-prototyping toolkit participants used live, and shaping the resulting brand guidelines so non-designers could keep the system consistent after the workshop ended. The biggest challenge was speed without sacrifice — compressing weeks of brand strategy into hours meant every exercise had to double as a real design decision, not just an icebreaker.\n\nThe format has since run with founders, student teams, and internal product squads, and the toolkit is still evolving based on what breaks (or clicks) in each new room.",
-    proj1ExtraText: "PROCESS NOTES\n\nEach session opens with a 15-minute prompt round: three questions designed to surface a feeling before a format — what should someone feel in the first 3 seconds, what should they never feel, and what's the one word this has to earn. Everything downstream (palette, type, layout density) gets checked against those three answers instead of personal taste, which is what keeps a two-hour workshop from turning into bikeshedding.\n\nThe toolkit itself is a stripped-down Figma file with locked components — teams drag, don't draw — so a non-designer can produce something structurally sound in the time it takes to argue about a font.",
-    proj2Desc: 'An editorial portrait series exploring light, texture, and expression — shot, directed, and retouched end to end for a personal photography study.',
     proj3Desc: "Moody started as a diploma project and I keep iterating on it as I learn more at university. It's an app for emotion tracking and emotional support. My role on the project was full ownership — I created it end to end.",
     proj3ExternalPrompt: 'Want to read more and try it?',
     proj3ExternalButton: 'Click here',
     proj4Desc: 'Forja was another diploma project — a full redesign that started with a heuristic evaluation of the existing site and carried through to a high-fidelity prototype.',
     proj4SideText: "The heuristic evaluation surfaced several visual and navigation inconsistencies — each page felt like it belonged to a different site. On the Customer Service page, I unified the visual hierarchy, simplified the FAQ accordion, and aligned the color palette with the rest of the site so the experience reads as one coherent brand from start to finish.",
     proj5Desc: "Better Campus was a heuristic analysis I did as part of a research group (Semillero) at Universidad Nacional (DIN'T). It's a student-to-student platform that helps you build your class schedule and connects with UNAL's academic system (SIA).",
-    proj6Desc: 'An art-direction collage project layering photography, texture, and type to build a visual language that feels handmade but intentional.',
-    proj7Desc: 'A full brand identity system — logo, type, color, and usage guidelines — designed to hold up across web, print, and social touchpoints.',
 
     // ── PLAY ─────────────────────────────────────────────────────
     playInstruction: 'drag some of my work <3',
@@ -201,30 +192,21 @@ const translations = {
 
     // ── WORK ─────────────────────────────────────────────────────
     workTitle: 'Trabajo',
-    proj1Title: 'GENERAME IDEA',        proj1Cat: 'Taller / Marca',            proj1Tag1: 'UI/UX',              proj1Tag2: 'Estrategia de Marca',
-    proj2Title: 'SERIE DE RETRATOS',    proj2Cat: 'Fotografía / Editorial',    proj2Tag1: 'Fotografía',         proj2Tag2: 'Editorial',
     proj3Title: 'MOODY',                 proj3Cat: 'App / Bienestar Emocional', proj3Tag1: 'UX/UI',              proj3Tag2: 'Research',      proj3Tag3: 'Marca',
     proj4Title: 'FORJA',                 proj4Cat: 'Rediseño Web',              proj4Tag1: 'UX/UI',              proj4Tag2: 'Research',      proj4Tag3: 'Rediseño',
     proj5Title: 'BETTER CAMPUS',         proj5Cat: 'Investigación UX',          proj5Tag1: 'UX/UI',              proj5Tag2: 'Research',      proj5Tag3: 'Análisis Heurístico',
-    proj6Title: 'COLLAGE',              proj6Cat: 'Dirección de Arte',         proj6Tag1: 'Dirección de Arte',  proj6Tag2: 'Visual',
-    proj7Title: 'SISTEMA DE MARCA',     proj7Cat: 'Marca / Identidad',         proj7Tag1: 'Branding',           proj7Tag2: 'Identidad',
 
     viewProject: 'Ver proyecto',
     backToWork: 'Volver al trabajo',
     prevProject: 'Anterior',
     nextProject: 'Siguiente',
 
-    proj1Desc: "GENERAME IDEA nació como un taller de estrategia de marca de dos días y creció hasta convertirse en una herramienta de generación de UI/UX en vivo. Los equipos llegaban solo con una idea vaga — un nombre, una sensación, un boceto en una servilleta — y salían con una identidad visual coherente: moodboard, pareja tipográfica, sistema de color y un primer acercamiento a la interfaz, todo decidido y prototipado en la misma sesión.\n\nMi rol cubrió todo el proceso: diseñar la estructura del taller y las dinámicas de facilitación, construir el kit de prototipado rápido que los participantes usaban en vivo, y dar forma a los lineamientos de marca resultantes para que personas sin experiencia en diseño pudieran mantener el sistema consistente después del taller. El mayor reto fue la velocidad sin sacrificar calidad — comprimir semanas de estrategia de marca en horas significaba que cada ejercicio debía funcionar como una decisión de diseño real, no solo como un rompehielos.\n\nEl formato se ha repetido con fundadores, equipos de estudiantes y squads internos de producto, y el kit sigue evolucionando según lo que se rompe (o funciona) en cada nueva sala.",
-    proj1ExtraText: "NOTAS DEL PROCESO\n\nCada sesión arranca con una ronda de 15 minutos: tres preguntas diseñadas para sacar a la luz una sensación antes que un formato — qué debería sentir alguien en los primeros 3 segundos, qué nunca debería sentir, y cuál es la única palabra que esto tiene que ganarse. Todo lo que viene después (paleta, tipografía, densidad de layout) se valida contra esas tres respuestas en vez del gusto personal, y eso es lo que evita que un taller de dos horas se convierta en discutir por discutir.\n\nEl kit en sí es un archivo de Figma reducido con componentes bloqueados — los equipos arrastran, no dibujan — así que alguien sin experiencia en diseño puede producir algo estructuralmente sólido en el tiempo que tomaría discutir sobre una tipografía.",
-    proj2Desc: 'Una serie de retratos editoriales explorando luz, textura y expresión — dirigida, fotografiada y retocada de principio a fin como estudio personal.',
     proj3Desc: 'Moody fue un proyecto del diplomado que, mientras voy aprendiendo en la universidad, sigo iterando. Es una aplicación para el tracking de emociones y apoyo emocional. Mi rol en el proyecto fue la creación total de este.',
     proj3ExternalPrompt: '¿Quieres leer más y probarlo?',
     proj3ExternalButton: 'Click aquí',
     proj4Desc: 'Forja fue otro proyecto del diplomado: un rediseño completo que arrancó con una evaluación heurística del sitio existente y llegó hasta el desarrollo de un prototipo de alta fidelidad.',
     proj4SideText: 'La evaluación heurística reveló varias inconsistencias visuales y de navegación entre secciones — cada página parecía pertenecer a un sitio distinto. En "Servicio al Cliente" unifiqué la jerarquía visual, simplifiqué el acordeón de preguntas frecuentes y alineé la paleta de color con el resto del sitio, para que la experiencia se sintiera como una sola marca coherente de principio a fin.',
     proj5Desc: "Better Campus fue un análisis heurístico realizado en el Semillero de la Universidad Nacional (DIN'T). Es una plataforma de estudiantes para estudiantes que brinda apoyo para armar el horario de clases y se vincula con el SIA de la UNAL.",
-    proj6Desc: 'Un proyecto de dirección de arte en collage que combina fotografía, textura y tipografía para construir un lenguaje visual artesanal pero intencional.',
-    proj7Desc: 'Un sistema de identidad de marca completo — logo, tipografía, color y lineamientos de uso — diseñado para sostenerse en web, impreso y redes sociales.',
 
     // ── PLAY ─────────────────────────────────────────────────────
     playInstruction: 'arrastra algunos de mis trabajos <3',
